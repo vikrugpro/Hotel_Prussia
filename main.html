@@ -13,7 +13,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style/index-style/index.css" />
+    <link rel="stylesheet" href="./style/main-style/main.css" />
   </head>
   <body>
     <!-- sticky элементы -->
@@ -502,9 +502,13 @@
           </div>
         </div>
         <div class="information" id="information">
-          <a href="#" class="information__link">О защите персональных данных</a>
-          <a href="#" class="information__link">Договор публичной оферты</a>
-          <a href="./index.html" class="information__link">
+          <div class="information-block block-1">
+            <a href="#" class="information__link"
+              >О защите персональных данных</a
+            >
+            <a href="#" class="information__link">Договор публичной оферты</a>
+          </div>
+          <div class="information-block block-2">
             <div class="information__logo-wrapper">
               <img
                 class="information__logo"
@@ -512,11 +516,15 @@
                 alt="Логотип отеля"
               />
             </div>
-          </a>
-          <a href="#" class="information__link">Внутренние правила гостиницы</a>
-          <a href="#" class="information__link"
-            >Договор о предоставлении гостиничных услуг</a
-          >
+          </div>
+          <div class="information-block block-3">
+            <a href="#" class="information__link"
+              >Внутренние правила гостиницы</a
+            >
+            <a href="#" class="information__link"
+              >Договор о предоставлении гостиничных услуг</a
+            >
+          </div>
         </div>
         <div class="rights">&#xa9; Пруссия 2023</div>
       </footer>

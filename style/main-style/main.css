@@ -13,7 +13,6 @@
 }
 
 section {
-  padding: 40px 5%;
   border: none;
 }
 
@@ -27,12 +26,10 @@ button {
   cursor: pointer;
   color: #ffffff;
   background-color: #5f454e;
-  padding: 10px 5px;
 }
 
 h2 {
   text-align: center;
-  margin: 20px 0;
 }
 
 .container {
@@ -173,11 +170,9 @@ h2 {
   width: 100%;
 }
 .footer .information {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .footer .rights {
@@ -186,4 +181,4 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=main.css.map */

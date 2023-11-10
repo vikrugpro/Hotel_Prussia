@@ -123,7 +123,6 @@
     .information {
         display: flex;
         @include flex(row, space-between, center);
-        }
     }
     .rights {
         display: flex;

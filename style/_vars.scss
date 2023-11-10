@@ -1,17 +1,22 @@
 $colorbeige: #f5ebe3;
-$colorwhite:#ffffff;
-$colorbrown:#a58076;
+$colorwhite: #ffffff;
+$colorbrown: #a58076;
 $colorplum: #5f454e;
-$font: 'Open Sans', sans-serif;
+$font: "Open Sans", sans-serif;
 
-@mixin font($ff,$fs,$fc, $fw) {
+@mixin font($ff, $fs, $fc, $fw) {
     font-family: $ff;
     font-size: $fs;
     color: $fc;
     font-weight: $fw;
 }
-@mixin flex($fd,$jc,$ai) {
+@mixin flex($fd, $jc, $ai) {
     flex-direction: $fd;
     justify-content: $jc;
     align-items: $ai;
+}
+@mixin _mobile {
+    @media (max-width: 320px) {
+        @content;
+    }
 }

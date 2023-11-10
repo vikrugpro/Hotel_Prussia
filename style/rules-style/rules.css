@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: #f5ebe3;
+  color: #5f454e;
+}
+
+section {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #5f454e;
+}
+
+button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #5f454e;
+}
+
+h2 {
+  text-align: center;
+}/*# sourceMappingURL=rules.css.map */
