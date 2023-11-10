@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- вставить иконку -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Отель Пруссия</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/index-style/index.css" />
+  </head>
+  <body>
+    <!-- sticky элементы -->
+    <div class="sticky">
+      <a class="sticky__telegramchat" href="#link-to-tg"
+        ><img
+          class="button__img"
+          src="./assets/img-common/telegram.svg"
+          alt="Telegram"
+      /></a>
+      <button class="sticky__btn btn">Забронировать</button>
+    </div>
+    <!-- Основная страница -->
+    <div class="container">
+      <header class="header">
+        <div class="header__contacts">
+          <div class="header__phones">
+            <div class="header__phones">+7 911-85-79-621</div>
+            <div class="header__phones">+7(4012) 65-00-57</div>
+          </div>
+          <div class="header__logo">
+            <a class="header__link" href="./index.html">
+              <img
+                class="logo__img"
+                src="./assets/img-common/logo.png"
+                alt="Prussiya-logo"
+              />
+            </a>
+          </div>
+          <div class="header__address">
+            236005, г. Калининград,<br />
+            ул. Коммунистическая 4А
+          </div>
+          <div class="header__switch-lg">language</div>
+        </div>
+        <nav class="header__nav nav">
+          <a class="nav__link" href="#about">О нас</a>
+          <a class="nav__link" href="#rooms">Наши номера</a>
+          <a class="nav__link" href="#reviews">Отзывы</a>
+          <a class="nav__link" href="#bookform">Забронировать</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+          <a class="nav__link" href="#information">Информация</a>
+        </nav>
+        <div class="header__title-wrapper">
+          <h1 class="header__title">Отель «Пруссия»</h1>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about" id="about">
+          <h2 class="about__smalltitle smalltitle">О нас</h2>
+          <div class="about__text-wrapper">
+            <p class="about__text">
+              Отель «Пруссия» находится в парковой зеленой зоне тихого
+              исторического района города (бывш. немец. Ponart).
+            </p>
+            <p class="about__text">
+              В 3 минутах ходьбы располагается детская
+              площадка, развлекательный семейный досуговый центр, магазины,
+              аптеки. В 5 минутах ходьбы находится рекреационная зона &ndash;
+              озеро Летнее, обустроенное детской площадкой, тренажерами,
+              пешеходными и беговыми дорожками. В 10 минутах ходьбы есть
+              спортивный комплекс с бассейном.
+            </p>
+            <p class="about__text">
+              От отеля до железнодорожного вокзала и автовокзала 3 остановки на
+              автобусе или маршрутном такси.
+            </p>
+            <p class="about__text">
+              В отделке интерьера и мебели отеля используются только природные
+              материалы: дерево, камень, натуральные ткани. Экологичность
+              &ndash; наше главное преимущество.
+            </p>
+          </div>
+          <div class="about__img-wrapper">
+            <img
+              src="./assets/img-common/about-img-1.jpg"
+              alt="Вход в отель"
+              class="about__img"
+            />
+            <img
+              src="./assets/img-common/about-img-2.jpg"
+              alt="Вид отеля снаружи"
+              class="about__img"
+            />
+            <img
+              src="./assets/img-common/about-img-3.jpg"
+              alt="Вид отеля"
+              class="about__img"
+            />
+          </div>
+        </section>
+        <section class="rooms" id="rooms">
+          <h2 class="rooms__smalltitle smalltitle">Наши номера</h2>
+          <div class="rooms__common common">
+            <ul class="common__list">
+              <li class="common__item">
+                Мы рады предложить нашим гостям 23 уютных номера.
+              </li>
+              <li class="common__item">
+                В каждом номере есть холодильник, телевизор, туалет, душевая
+                кабина или ванная, фен.
+              </li>
+              <li class="common__item">
+                Отель имеет свою бесплатную парковку для гостей.
+              </li>
+            </ul>
+          </div>
+          <div class="rooms__container">
+            <!-- Первый номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Double)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Двухспальная кровать (180*200 см)</li>
+                  <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник</li>
+                  <li class="rooms__item">Стол, шкаф</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено не во всех номерах
+                    (раскладной диван или раскладушка)
+                  </li>
+                </ul>
+              </div>
+              <!-- карусель -->
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide rooms__img-wrapper"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Второй номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Улучшенный двухместный номер I категории (Double)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Двухспальная кровать (170*200 см)</li>
+                  <li class="rooms__item">Площадь номера 26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
+                  <li class="rooms__item">Журнальный столик</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">Барная стойка</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено (раскладной диван или
+                    раскладушка)
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Третий номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Twin)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">
+                    Две раздельные кровати (90*200 см)
+                  </li>
+                  <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
+                  <li class="rooms__item">Стол, шкаф</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено (раскладной диван)
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Четвертый номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Трехместный номер I категории (Triple)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">
+                    Три раздельные кровати (90*200 см)
+                  </li>
+                  <li class="rooms__item">Площадь номера 18-22 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Журнальный столик</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ, wc, фен, комплект полотенец
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место не предусмотрено
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Пятый номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Четырехместный номер I категории (семейный)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Четыре односпальные кровати</li>
+                  <li class="rooms__item">Площадь номера 30 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Журнальный столик, сервант</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    Принадлежности для приготовления чая
+                  </li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ, wc, фен, комплект полотенец
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <h2 class="reviews__smalltitle smalltitle">Отзывы</h2>
+          <div class="reviews__published published">
+            <div>ФИО</div>
+            <div>Дата</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              fugit pariatur voluptate, inventore aliquam aperiam quibusdam
+              optio cupiditate voluptatem. At distinctio iusto tempore similique
+              culpa quo dolorum hic architecto? Placeat?
+            </div>
+            <!-- tripadvisor -->
+          </div>
+          <div class="reviews__form-wrapper">
+            <form class="reviews__form review">
+              <input
+                type="text"
+                class="form-control review__text"
+                placeholder="Имя"
+              />
+              <input
+                type="email"
+                class="form-control review__text"
+                placeholder="Email"
+              />
+              <textarea class="form-control review__text" rows="2">
+Ваш отзыв</textarea
+              >
+              <button class="review__btn">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="book" id="bookform">
+          <h2 class="book__smalltitle smalltitle">Бронирование</h2>
+          <div class="book__form-wrapper">
+            <form class="bookform">
+              <input
+                type="text"
+                class="form-control book__text"
+                placeholder="Дата заезда"
+              />
+              <input
+                type="text"
+                class="form-control book__text"
+                placeholder="Дата выезда"
+              />
+              <input
+                type="text"
+                class="form-control book__text"
+                placeholder="Количество человек"
+              />
+              <input
+                type="text"
+                class="form-control book__text"
+                placeholder="Имя"
+              />
+              <button class="book__btn">Забронировать</button>
+            </form>
+            <div class="book__rules">
+              <h3 class="book_subtitle">
+                Босуществляется бесплатно без внесения предоплаты
+                (негарантированное бронирование):
+              </h3>
+              <ul class="book__list">
+                <li class="book__item">на сайте,</li>
+                <li class="book__item">по телефону администратору отеля,</li>
+                <li class="book__item">по электронной почте,</li>
+                <li class="book__item">
+                  обратившись к администратору отеля на рецепции.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="contacts" id="contacts">
+          <div class="contacts__map-wrapper">
+            <iframe
+              class="contacts__map"
+              src="https://yandex.ru/map-widget/v1/?scroll=false&amp;um=constructor%3Ad_pIYmqb3Er9m54YBvpE7xtIJQUXSzN_"
+            ></iframe>
+          </div>
+          <div class="contacts__info">
+            <div class="contacts__text">
+              Отель "ПРУССИЯ" категория "без звезд" (свидетельство №
+              78/17/0251-2019)
+            </div>
+            <div class="contacts__text">
+              Фактический адрес: 236005, Россия, г. Калининград, ул.
+              Коммунистическая 4а.
+            </div>
+            <div class="contacts__text">
+              ИНН:391800946429 ОГРНИП:318392600035900
+            </div>
+            <div class="contacts__text">e-mail: prussia.hotel@gmail.com</div>
+            <div class="contacts__text">
+              телефон: +7(4012) 65-00-57, +7 911-85-79-621
+            </div>
+          </div>
+        </div>
+        <div class="information" id="information">
+          <a href="#" class="information__link">О защите персональных данных</a>
+          <a href="#" class="information__link">Договор публичной оферты</a>
+          <a href="./index.html" class="information__link">
+            <div class="information__logo-wrapper">
+              <img
+                class="information__logo"
+                src="./assets/img-common/logo.png"
+                alt="Логотип отеля"
+              />
+            </div>
+          </a>
+          <a href="#" class="information__link">Внутренние правила гостиницы</a>
+          <a href="#" class="information__link"
+            >Договор о предоставлении гостиничных услуг</a
+          >
+        </div>
+        <div class="rights">&#xa9; Пруссия 2023</div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

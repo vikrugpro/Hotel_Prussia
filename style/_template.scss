@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: $colorbeige;
+    color: $colorplum;
+}
+section {
+    padding: 40px 5%;
+    border: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $colorplum;
+}
+button {
+    cursor: pointer;
+    color: $colorwhite;
+    background-color: $colorplum;
+    padding: 10px 5px;
+}
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
