@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- вставить иконку -->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/img-common/logo.ico" type="image/x-icon" />
     <title>Отель Пруссия</title>
     <link rel="stylesheet" href="./style/normalize.css" />
     <link
@@ -24,18 +23,21 @@
           src="./assets/img-common/telegram.svg"
           alt="Telegram"
       /></a>
-      <button class="sticky__btn btn">Забронировать</button>
+      <button class="sticky__btn btn" onclick="window.location.href='#bookform'" >Забронировать</button>
     </div>
     <!-- Основная страница -->
     <div class="container">
       <header class="header">
         <div class="header__contacts">
+          <div class="header__email">
+            prussia.hotel@gmail.com
+          </div>
           <div class="header__phones">
             <div class="header__phones">+7 911-85-79-621</div>
             <div class="header__phones">+7(4012) 65-00-57</div>
           </div>
-          <div class="header__logo">
-            <a class="header__link" href="./index.html">
+          <div class="header__logo logo">
+            <a class="logo__link" href="./index.html">
               <img
                 class="logo__img"
                 src="./assets/img-common/logo.png"
@@ -45,7 +47,7 @@
           </div>
           <div class="header__address">
             236005, г. Калининград,<br />
-            ул. Коммунистическая 4А
+            ул. Коммунистическая, 4А
           </div>
           <div class="header__switch-lg">language</div>
         </div>
@@ -145,6 +147,7 @@
                     (раскладной диван или раскладушка)
                   </li>
                 </ul>
+                <div class="rooms__price"><b>Цена:  руб.* </b></div>
               </div>
               <!-- карусель -->
               <div
@@ -179,29 +182,6 @@
             </div>
             <!-- Второй номер -->
             <div class="rooms__room">
-              <div class="rooms__info">
-                <h3 class="rooms__subtitle">
-                  Улучшенный двухместный номер I категории (Double)
-                </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">Двухспальная кровать (170*200 см)</li>
-                  <li class="rooms__item">Площадь номера 26 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
-                  <li class="rooms__item">Журнальный столик</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">Барная стойка</li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ или ванна, wc, фен, комплект
-                    полотенец, шампунь, гель для душа
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место предусмотрено (раскладной диван или
-                    раскладушка)
-                  </li>
-                </ul>
-              </div>
               <div
                 id="carouselExampleSlidesOnly"
                 class="rooms__img-wrapper carousel slide"
@@ -232,6 +212,30 @@
                   </div>
                 </div>
               </div>
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Улучшенный двухместный номер I категории (Double)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Двухспальная кровать (170*200 см)</li>
+                  <li class="rooms__item">Площадь номера 26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
+                  <li class="rooms__item">Журнальный столик</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">Барная стойка</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено (раскладной диван или
+                    раскладушка)
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена:  руб.* </b></div>
+              </div>
             </div>
             <!-- Третий номер -->
             <div class="rooms__room">
@@ -257,6 +261,7 @@
                     Дополнительное место предусмотрено (раскладной диван)
                   </li>
                 </ul>
+                <div class="rooms__price"><b>Цена:  руб.* </b></div>
               </div>
               <div
                 id="carouselExampleSlidesOnly"
@@ -291,27 +296,6 @@
             </div>
             <!-- Четвертый номер -->
             <div class="rooms__room">
-              <div class="rooms__info">
-                <h3 class="rooms__subtitle">
-                  Трехместный номер I категории (Triple)
-                </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">
-                    Три раздельные кровати (90*200 см)
-                  </li>
-                  <li class="rooms__item">Площадь номера 18-22 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Журнальный столик</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ, wc, фен, комплект полотенец
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место не предусмотрено
-                  </li>
-                </ul>
-              </div>
               <div
                 id="carouselExampleSlidesOnly"
                 class="rooms__img-wrapper carousel slide"
@@ -341,6 +325,28 @@
                     />
                   </div>
                 </div>
+              </div>              
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Трехместный номер I категории (Triple)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">
+                    Три раздельные кровати (90*200 см)
+                  </li>
+                  <li class="rooms__item">Площадь номера 18-22 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Журнальный столик</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ, wc, фен, комплект полотенец
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место не предусмотрено
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена:  руб.* </b></div>
               </div>
             </div>
             <!-- Пятый номер -->
@@ -366,6 +372,7 @@
                     Дополнительное место предусмотрено
                   </li>
                 </ul>
+                <div class="rooms__price"><b>Цена:  руб.* </b></div>
               </div>
               <div
                 id="carouselExampleSlidesOnly"
@@ -402,66 +409,101 @@
         </section>
         <section class="reviews" id="reviews">
           <h2 class="reviews__smalltitle smalltitle">Отзывы</h2>
-          <div class="reviews__published published">
-            <div>ФИО</div>
-            <div>Дата</div>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              fugit pariatur voluptate, inventore aliquam aperiam quibusdam
-              optio cupiditate voluptatem. At distinctio iusto tempore similique
-              culpa quo dolorum hic architecto? Placeat?
-            </div>
-            <!-- tripadvisor -->
-          </div>
-          <div class="reviews__form-wrapper">
-            <form class="reviews__form review">
-              <input
-                type="text"
-                class="form-control review__text"
-                placeholder="Имя"
-              />
-              <input
-                type="email"
-                class="form-control review__text"
-                placeholder="Email"
-              />
-              <textarea class="form-control review__text" rows="2">
-Ваш отзыв</textarea
-              >
-              <button class="review__btn">Отправить</button>
-            </form>
-          </div>
+          <div>traveladvisor</div>
         </section>
         <section class="book" id="bookform">
           <h2 class="book__smalltitle smalltitle">Бронирование</h2>
           <div class="book__form-wrapper">
-            <form class="bookform">
-              <input
-                type="text"
-                class="form-control book__text"
-                placeholder="Дата заезда"
-              />
-              <input
-                type="text"
-                class="form-control book__text"
-                placeholder="Дата выезда"
-              />
-              <input
-                type="text"
-                class="form-control book__text"
-                placeholder="Количество человек"
-              />
-              <input
-                type="text"
-                class="form-control book__text"
-                placeholder="Имя"
-              />
-              <button class="book__btn">Забронировать</button>
+            <form class="book__form">
+              <div class="book__container">
+                <div class="book__item">
+                  <label for="date1" class="form-label book__label">Дата заезда</label>
+                  <input
+                  type="date"
+                  id="data1"
+                  class="form-control book__text"
+                  placeholder="Дата заезда"
+                  />
+                </div>
+                <div class="book__item">
+                  <label for="date2" class="form-label book__label">Дата выезда</label>
+                  <input
+                  type="date"
+                  id="data2"
+                  class="form-control book__text"
+                  placeholder="Дата выезда"
+                  />
+                </div>
+                <div class="book__item">
+                  <label for="name" class="form-label book__label">Фамилия и имя</label>
+                  <input
+                  type="text"
+                  id="name"
+                  class="form-control book__text"
+                  />
+                </div>
+                <div class="book__item">
+                  <label for="email" class="form-label book__label">E-mail</label>
+                  <input
+                  type="email"
+                  id="email"
+                  class="form-control book__text"
+                  />
+                </div>
+                <div class="book__item">
+                  <label for="tel" class="form-label book__label">Телефон</label>
+                  <input
+                  type="tel"
+                  id="tel"
+                  class="form-control book__text"
+                  />
+                </div>
+                <div class="book__item">
+                  <select class="form-select book__choose" aria-label="Default select example">
+                      <option class="book__value"  selected value="">Выберите номер</option>
+                      <option class="book__value" value="1">Двухместный номер I категории (Double)</option>
+                      <option class="book__value" value="2">Улучшенный двухместный номер I категории (Double)</option>
+                      <option class="book__value" value="3">Двухместный номер I категории (Twin)</option>
+                      <option class="book__value" value="4">Трехместный номер I категории (Triple)</option>
+                      <option class="book__value" value="5">Четырехместный номер I категории (семейный)</option>
+                  </select>
+                </div>
+                <div class="book__item">
+                  <label for="adult" class="form-label book__label">Взрослые</label>
+                  <select id="adult" class="form-select book__choose" aria-label="Default select example">
+                    <option class="book__value"  selected value="">Количество человек</option>
+                    <option class="book__value" value="1">1</option>
+                    <option class="book__value" value="2">2</option>
+                    <option class="book__value" value="1">3</option>
+                    <option class="book__value" value="2">4</option>
+                    <option class="book__value" value="1">5</option>
+                    <option class="book__value" value="2">6</option>
+                    <option class="book__value" value="1">7</option>
+                  </select>
+                </div>
+                <div class="book__item">
+                  <label for="child" class="form-label book__label">Дети</label>
+                  <select id="child" class="form-select book__choose" aria-label="Default select example">
+                    <option class="book__value"  selected value="">Количество человек</option>
+                    <option class="book__value" value="1">1</option>
+                    <option class="book__value" value="2">2</option>
+                    <option class="book__value" value="1">3</option>
+                    <option class="book__value" value="2">4</option>
+                    <option class="book__value" value="1">5</option>
+                    <option class="book__value" value="2">6</option>
+                    <option class="book__value" value="1">7</option>
+                  </select>
+                </div>
+                <div class="book__item">
+                  <label for="message" class="form-label book__label">Ваши пожелания и вопросы</label>
+                  <textarea type="message" class="form-control book__text" rows="3">Ваше сообщение</textarea>
+                </div>
+              </div>
+              <button class="book__btn" >Забронировать</button>
             </form>
             <div class="book__rules">
               <h3 class="book_subtitle">
-                Босуществляется бесплатно без внесения предоплаты
-                (негарантированное бронирование):
+                Бронирование осуществляется бесплатно без внесения предоплаты <br>(негарантированное бронирование):
               </h3>
               <ul class="book__list">
                 <li class="book__item">на сайте,</li>
@@ -485,19 +527,19 @@
           </div>
           <div class="contacts__info">
             <div class="contacts__text">
-              Отель "ПРУССИЯ" категория "без звезд" (свидетельство №
+              <b>Отель "ПРУССИЯ"</b> категория "без звезд" (свидетельство №
               78/17/0251-2019)
             </div>
             <div class="contacts__text">
-              Фактический адрес: 236005, Россия, г. Калининград, ул.
+              <b>Фактический адрес:</b> 236005, Россия, г. Калининград, ул.
               Коммунистическая 4а.
             </div>
             <div class="contacts__text">
-              ИНН:391800946429 ОГРНИП:318392600035900
+              <b>ИНН:</b>391800946429    <b>ОГРНИП:</b>318392600035900
             </div>
-            <div class="contacts__text">e-mail: prussia.hotel@gmail.com</div>
+            <div class="contacts__text"><b>e-mail:</b> prussia.hotel@gmail.com</div>
             <div class="contacts__text">
-              телефон: +7(4012) 65-00-57, +7 911-85-79-621
+              <b>телефон:</b> +7(4012) 65-00-57, +7 911-85-79-621
             </div>
           </div>
         </div>
@@ -526,7 +568,7 @@
             >
           </div>
         </div>
-        <div class="rights">&#xa9; Пруссия 2023</div>
+        <div class="rights">&#xa9; Отель &laquo;Пруссия&raquo; 2023</div>
       </footer>
     </div>
     <script
