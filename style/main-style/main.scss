@@ -125,6 +125,10 @@
         .rooms__price {
             @include font($font, 130%, $colorplum, 400);
         }
+        .rooms__img-wrapper {
+            display: flex;
+            @include flex(column, space-around, center);
+        }
     }
     .reviews {
         grid-area: 3/1/4/2;
