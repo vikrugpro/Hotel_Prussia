@@ -229,6 +229,12 @@ h2 {
   color: #5f454e;
   font-weight: 400;
 }
+.main .rooms .rooms__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 .main .reviews {
   grid-area: 3/1/4/2;
   border-bottom: 2px solid #a58076;
