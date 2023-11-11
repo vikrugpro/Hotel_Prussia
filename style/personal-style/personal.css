@@ -7,13 +7,19 @@
 
 .container {
   margin: 0 auto;
+  padding: 0;
   max-width: 1440px;
   background-color: #f5ebe3;
   color: #5f454e;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  color: #5f454e;
+  font-weight: 400;
 }
 
 section {
   border: none;
+  padding: 0 1%;
 }
 
 a {
@@ -22,12 +28,45 @@ a {
   color: #5f454e;
 }
 
+a:hover {
+  color: #a58076;
+}
+
 button {
-  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 130%;
   color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
   background-color: #5f454e;
+  border-radius: 10px;
+  min-width: 250px;
+  min-height: 50px;
+  width: 30%;
+}
+
+button:hover {
+  font-family: "Open Sans", sans-serif;
+  font-size: 130%;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #a58076;
+  border: 1px solid #ffffff;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 650%;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 h2 {
+  padding: 2% 0;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 200%;
+  color: #5f454e;
+  font-weight: 700;
 }/*# sourceMappingURL=personal.css.map */

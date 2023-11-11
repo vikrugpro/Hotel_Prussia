@@ -7,23 +7,44 @@
 }
 .container {
     margin: 0 auto;
+    padding: 0;
     max-width: 1440px;
     background-color: $colorbeige;
     color: $colorplum;
+    @include font($font, 100%, $colorplum, 400);
 }
 section {
     border: none;
+    padding: 0 1% ;
 }
 a {
     text-decoration: none;
     cursor: pointer;
     color: $colorplum;
 }
+a:hover {
+    color: $colorbrown;
+}
 button {
+    @include font($font, 130%, $colorwhite, 400);
     cursor: pointer;
-    color: $colorwhite;
     background-color: $colorplum;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 50px;
+    width: 30%;
+}
+button:hover {
+    @include font($font, 130%, $colorwhite, 700);
+    cursor: pointer;
+    background-color: $colorbrown;
+    border: 1px solid $colorwhite;
+}
+h1 {
+    @include font($font, 650%, $colorwhite, 600);
 }
 h2 {
+    padding: 2% 0;
     text-align: center;
+    @include font($font, 200%, $colorplum, 700);
 }
