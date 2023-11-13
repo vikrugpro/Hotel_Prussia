@@ -3,7 +3,7 @@
 .container {
     display: grid;
     grid-template: 12% 1fr 10.5% / 100%;
-    min-height: 6500px ;
+    min-height: 6500px;
 }
 .sticky {
     position: fixed;
@@ -46,7 +46,7 @@
             @include flex(column, center, center);
             gap: 8%;
         }
-        .hedaer__logo {
+        .header__logo {
             grid-area: 1/3/2/4;
             display: flex;
             @include flex(column, center, center);
@@ -73,7 +73,7 @@
         display: flex;
         @include flex(row, space-around, center);
         flex-wrap: wrap;
-        background: linear-gradient($colorbeige,$colorwhite);
+        background: linear-gradient($colorbeige, $colorwhite);
     }
     .header__title-wrapper {
         grid-area: 3/1/4/2;
@@ -114,7 +114,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-between;
-            background: linear-gradient($colorbeige,$colorwhite);
+            background: linear-gradient($colorbeige, $colorwhite);
             border-bottom: 5px solid $colorwhite;
         }
         .rooms__info {
@@ -137,7 +137,7 @@
     .book {
         grid-area: 4/1/5/2;
         border-bottom: 2px solid $colorbrown;
-        background: linear-gradient($colorbeige,$colorwhite);
+        background: linear-gradient($colorbeige, $colorwhite);
         .book__form {
             display: flex;
             @include flex(column, space-around, center);
@@ -184,7 +184,7 @@
             @include flex(row, space-around, center);
             padding-bottom: 5%;
             border-bottom: 2px solid $colorbrown;
-            background: linear-gradient($colorbeige,$colorwhite);
+            background: linear-gradient($colorbeige, $colorwhite);
         }
     }
     .rights {
