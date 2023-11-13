@@ -6,7 +6,7 @@
     min-height: 6500px;
 }
 .txt {
-    @include font($font, 0.9vw, $colorplum, 700);
+    @include font($font, 100%, $colorplum, 700);
 }
 .txt__bottom {
     @include font($font, 0.7vw, $colorplum, 700);
@@ -58,6 +58,17 @@
             @include flex(column, center, center);
             width: 100%;
         }
+        .logo__img {
+            @include _mobile {
+                display: none;
+            }
+        }
+        .logo__img-short {
+            display: none;
+            @include _mobile {
+                display: block;
+            }
+        }
         .header__address {
             grid-area: 1/4/2/5;
             display: flex;
@@ -80,6 +91,10 @@
         @include flex(row, space-around, center);
         flex-wrap: wrap;
         background: linear-gradient($colorbeige, $colorwhite);
+        @include _mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     }
     .header__img-wrapper {
         grid-area: 3/1/4/2;

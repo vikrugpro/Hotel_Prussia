@@ -16,7 +16,7 @@ $font: "Open Sans", sans-serif;
     align-items: $ai;
 }
 @mixin _mobile {
-    @media (max-width: 320px) {
+    @media (max-width: 500px) {
         @content;
     }
 }
