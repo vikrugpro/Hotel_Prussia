@@ -9,13 +9,16 @@
     margin: 0 auto;
     padding: 0;
     max-width: 1440px;
-    background-color: $colorbeige;
+    // background-color: $colorbeige;
     color: $colorplum;
     @include font($font, 100%, $colorplum, 400);
 }
 section {
     border: none;
-    padding: 0 1% ;
+    padding: 0 1%;
+    &:nth-child(even) {
+        background-color: $colorbeige;
+    }
 }
 a {
     text-decoration: none;

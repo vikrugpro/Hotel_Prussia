@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/img-common/logo.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img-common/logo.ico"
+      type="image/x-icon"
+    />
     <title>Отель Пруссия</title>
     <link rel="stylesheet" href="./style/normalize.css" />
     <link
@@ -15,27 +19,30 @@
     <link rel="stylesheet" href="./style/main-style/main.css" />
   </head>
   <body>
-    <!-- sticky элементы -->
+    <!-- sticky ЗАМЕНИТЬ ССЫЛКУ НА ТГ -->
     <div class="sticky">
-      <a class="sticky__telegramchat" href="#link-to-tg"
+      <a class="sticky__telegramchat" href="https://t.me/vikrugpro"
         ><img
           class="button__img"
           src="./assets/img-common/telegram.svg"
           alt="Telegram"
       /></a>
-      <button class="sticky__btn btn" onclick="window.location.href='#bookform'" >Забронировать</button>
+      <button
+        class="sticky__btn btn"
+        onclick="window.location.href='#bookform'"
+      >
+        Забронировать
+      </button>
     </div>
     <!-- Основная страница -->
     <div class="container">
       <header class="header">
-        <div class="header__contacts">
-          <div class="header__email">
-            prussia.hotel@gmail.com
-          </div>
+        <div class="header__contacts txt">
           <div class="header__phones">
             <div class="header__phone">+7 911-85-79-621</div>
             <div class="header__phone">+7(4012) 65-00-57</div>
           </div>
+          <div class="header__email">prussia.hotel@gmail.com</div>
           <div class="header__logo logo">
             <a class="logo__link" href="./index.html">
               <img
@@ -51,7 +58,7 @@
           </div>
           <div class="header__switch-lg">language</div>
         </div>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav txt">
           <a class="nav__link" href="#about">О нас</a>
           <a class="nav__link" href="#rooms">Наши номера</a>
           <a class="nav__link" href="#reviews">Отзывы</a>
@@ -59,17 +66,15 @@
           <a class="nav__link" href="#contacts">Контакты</a>
           <a class="nav__link" href="#information">Информация</a>
         </nav>
-        <div class="header__title-wrapper">
-          <h1 class="header__title">Отель «Пруссия»</h1>
-        </div>
+        <div class="header__img-wrapper"></div>
       </header>
       <main class="main">
         <section class="about" id="about">
-          <h2 class="about__smalltitle smalltitle">О нас</h2>
+          <h2 class="about__smalltitle smalltitle">Отель «Пруссия»</h2>
           <div class="about__text-wrapper">
             <p class="about__text">
-              Отель «Пруссия» находится в парковой зеленой зоне тихого
-              исторического района города (бывш. немец. Ponart).
+              Наш отель находится в парковой зеленой зоне тихого исторического
+              района города (бывш. немец. Ponart).
             </p>
             <p class="about__text">
               В 3 минутах ходьбы располагается детская
@@ -87,6 +92,11 @@
               В отделке интерьера и мебели отеля используются только природные
               материалы: дерево, камень, натуральные ткани. Экологичность
               &ndash; наше главное преимущество.
+            </p>
+            <p class="about_text">
+              Мы рады предложить нашим гостям 23 уютных номера. В каждом номере
+              есть холодильник, телевизор, туалет, душевая кабина или ванная,
+              фен. Отель имеет свою бесплатную парковку для гостей.
             </p>
           </div>
           <div class="about__img-wrapper">
@@ -109,20 +119,6 @@
         </section>
         <section class="rooms" id="rooms">
           <h2 class="rooms__smalltitle smalltitle">Наши номера</h2>
-          <div class="rooms__common common">
-            <ul class="common__list">
-              <li class="common__item">
-                Мы рады предложить нашим гостям 23 уютных номера.
-              </li>
-              <li class="common__item">
-                В каждом номере есть холодильник, телевизор, туалет, душевая
-                кабина или ванная, фен.
-              </li>
-              <li class="common__item">
-                Отель имеет свою бесплатную парковку для гостей.
-              </li>
-            </ul>
-          </div>
           <div class="rooms__container">
             <!-- Первый номер -->
             <div class="rooms__room">
@@ -147,7 +143,7 @@
                     (раскладной диван или раскладушка)
                   </li>
                 </ul>
-                <div class="rooms__price"><b>Цена:  руб.* </b></div>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
               </div>
               <!-- карусель -->
               <div
@@ -234,7 +230,7 @@
                     раскладушка)
                   </li>
                 </ul>
-                <div class="rooms__price"><b>Цена:  руб.* </b></div>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
               </div>
             </div>
             <!-- Третий номер -->
@@ -261,7 +257,7 @@
                     Дополнительное место предусмотрено (раскладной диван)
                   </li>
                 </ul>
-                <div class="rooms__price"><b>Цена:  руб.* </b></div>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
               </div>
               <div
                 id="carouselExampleSlidesOnly"
@@ -325,7 +321,7 @@
                     />
                   </div>
                 </div>
-              </div>              
+              </div>
               <div class="rooms__info">
                 <h3 class="rooms__subtitle">
                   Трехместный номер I категории (Triple)
@@ -346,7 +342,7 @@
                     Дополнительное место не предусмотрено
                   </li>
                 </ul>
-                <div class="rooms__price"><b>Цена:  руб.* </b></div>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
               </div>
             </div>
             <!-- Пятый номер -->
@@ -372,7 +368,7 @@
                     Дополнительное место предусмотрено
                   </li>
                 </ul>
-                <div class="rooms__price"><b>Цена:  руб.* </b></div>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
               </div>
               <div
                 id="carouselExampleSlidesOnly"
@@ -406,10 +402,16 @@
               </div>
             </div>
           </div>
+          <div class="rooms__attention">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+            amet ducimus, obcaecati voluptatum aliquam a debitis rem optio
+            excepturi ab dolores repellat aperiam odio pariatur porro minima!
+            Illo, itaque corporis!
+          </div>
         </section>
         <section class="reviews" id="reviews">
           <h2 class="reviews__smalltitle smalltitle">Отзывы</h2>
-          <div>traveladvisor</div>
+          <div>tripadvisor widget</div>
         </section>
         <section class="book" id="bookform">
           <h2 class="book__smalltitle smalltitle">Бронирование</h2>
@@ -417,61 +419,90 @@
             <form class="book__form">
               <div class="book__container">
                 <div class="book__item">
-                  <label for="date1" class="form-label book__label">Дата заезда</label>
+                  <label for="date1" class="form-label book__label"
+                    >Дата заезда</label
+                  >
                   <input
-                  type="date"
-                  id="data1"
-                  class="form-control book__text"
-                  placeholder="Дата заезда"
+                    type="date"
+                    id="data1"
+                    class="form-control book__text"
+                    placeholder="Дата заезда"
                   />
                 </div>
                 <div class="book__item">
-                  <label for="date2" class="form-label book__label">Дата выезда</label>
+                  <label for="date2" class="form-label book__label"
+                    >Дата выезда</label
+                  >
                   <input
-                  type="date"
-                  id="data2"
-                  class="form-control book__text"
-                  placeholder="Дата выезда"
+                    type="date"
+                    id="data2"
+                    class="form-control book__text"
+                    placeholder="Дата выезда"
                   />
                 </div>
                 <div class="book__item">
-                  <label for="name" class="form-label book__label">Фамилия и имя</label>
+                  <label for="name" class="form-label book__label"
+                    >Фамилия и имя</label
+                  >
                   <input
-                  type="text"
-                  id="name"
-                  class="form-control book__text"
+                    type="text"
+                    id="name"
+                    class="form-control book__text"
                   />
                 </div>
                 <div class="book__item">
-                  <label for="email" class="form-label book__label">E-mail</label>
+                  <label for="email" class="form-label book__label"
+                    >E-mail</label
+                  >
                   <input
-                  type="email"
-                  id="email"
-                  class="form-control book__text"
+                    type="email"
+                    id="email"
+                    class="form-control book__text"
                   />
                 </div>
                 <div class="book__item">
-                  <label for="tel" class="form-label book__label">Телефон</label>
-                  <input
-                  type="tel"
-                  id="tel"
-                  class="form-control book__text"
-                  />
+                  <label for="tel" class="form-label book__label"
+                    >Телефон</label
+                  >
+                  <input type="tel" id="tel" class="form-control book__text" />
                 </div>
                 <div class="book__item">
-                  <select class="form-select book__choose" aria-label="Default select example">
-                      <option class="book__value"  selected value="">Выберите номер</option>
-                      <option class="book__value" value="1">Двухместный номер I категории (Double)</option>
-                      <option class="book__value" value="2">Улучшенный двухместный номер I категории (Double)</option>
-                      <option class="book__value" value="3">Двухместный номер I категории (Twin)</option>
-                      <option class="book__value" value="4">Трехместный номер I категории (Triple)</option>
-                      <option class="book__value" value="5">Четырехместный номер I категории (семейный)</option>
+                  <select
+                    class="form-select book__choose"
+                    aria-label="Default select example"
+                  >
+                    <option class="book__value" selected value="">
+                      Выберите номер
+                    </option>
+                    <option class="book__value" value="1">
+                      Двухместный номер I категории (Double)
+                    </option>
+                    <option class="book__value" value="2">
+                      Улучшенный двухместный номер I категории (Double)
+                    </option>
+                    <option class="book__value" value="3">
+                      Двухместный номер I категории (Twin)
+                    </option>
+                    <option class="book__value" value="4">
+                      Трехместный номер I категории (Triple)
+                    </option>
+                    <option class="book__value" value="5">
+                      Четырехместный номер I категории (семейный)
+                    </option>
                   </select>
                 </div>
                 <div class="book__item">
-                  <label for="adult" class="form-label book__label">Взрослые</label>
-                  <select id="adult" class="form-select book__choose" aria-label="Default select example">
-                    <option class="book__value"  selected value="">Количество человек</option>
+                  <label for="adult" class="form-label book__label"
+                    >Взрослые</label
+                  >
+                  <select
+                    id="adult"
+                    class="form-select book__choose"
+                    aria-label="Default select example"
+                  >
+                    <option class="book__value" selected value="">
+                      Количество человек
+                    </option>
                     <option class="book__value" value="1">1</option>
                     <option class="book__value" value="2">2</option>
                     <option class="book__value" value="1">3</option>
@@ -483,8 +514,14 @@
                 </div>
                 <div class="book__item">
                   <label for="child" class="form-label book__label">Дети</label>
-                  <select id="child" class="form-select book__choose" aria-label="Default select example">
-                    <option class="book__value"  selected value="">Количество человек</option>
+                  <select
+                    id="child"
+                    class="form-select book__choose"
+                    aria-label="Default select example"
+                  >
+                    <option class="book__value" selected value="">
+                      Количество человек
+                    </option>
                     <option class="book__value" value="1">1</option>
                     <option class="book__value" value="2">2</option>
                     <option class="book__value" value="1">3</option>
@@ -495,15 +532,21 @@
                   </select>
                 </div>
                 <div class="book__item">
-                  <label for="message" class="form-label book__label">Ваши пожелания и вопросы</label>
-                  <textarea type="message" class="form-control book__text" rows="3">Ваше сообщение</textarea>
+                  <label for="message" class="form-label book__label"
+                    >Ваши пожелания и вопросы</label
+                  >
+                  <textarea
+                    type="message"
+                    class="form-control book__text"
+                  ></textarea>
                 </div>
               </div>
-              <button class="book__btn" >Забронировать</button>
+              <button class="book__btn">Забронировать</button>
             </form>
             <div class="book__rules">
               <h3 class="book_subtitle">
-                Бронирование осуществляется бесплатно без внесения предоплаты <br>(негарантированное бронирование):
+                Бронирование осуществляется бесплатно без внесения предоплаты
+                <br />(негарантированное бронирование):
               </h3>
               <ul class="book__list">
                 <li class="book__item">на сайте,</li>
@@ -535,20 +578,24 @@
               Коммунистическая 4а.
             </div>
             <div class="contacts__text">
-              <b>ИНН:</b>391800946429    <b>ОГРНИП:</b>318392600035900
+              <b>ИНН:</b>391800946429 <b>ОГРНИП:</b>318392600035900
             </div>
-            <div class="contacts__text"><b>e-mail:</b> prussia.hotel@gmail.com</div>
+            <div class="contacts__text">
+              <b>e-mail:</b> prussia.hotel@gmail.com
+            </div>
             <div class="contacts__text">
               <b>телефон:</b> +7(4012) 65-00-57, +7 911-85-79-621
             </div>
           </div>
         </div>
-        <div class="information" id="information">
+        <div class="information txt__bottom" id="information">
           <div class="information-block block-1">
             <a href="./personal.html" class="information__link"
               >О защите персональных данных</a
             >
-            <a href="./oferta.html" class="information__link">Договор публичной оферты</a>
+            <a href="./oferta.html" class="information__link"
+              >Договор публичной оферты</a
+            >
           </div>
           <div class="information-block block-2">
             <div class="information__logo-wrapper">
