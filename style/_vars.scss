@@ -15,6 +15,11 @@ $font: "Open Sans", sans-serif;
     justify-content: $jc;
     align-items: $ai;
 }
+@mixin _tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
 @mixin _mobile {
     @media (max-width: 500px) {
         @content;
