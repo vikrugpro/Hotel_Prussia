@@ -493,7 +493,7 @@
         <section class="book" id="bookform">
           <h2 class="book__smalltitle smalltitle">Бронирование</h2>
           <div class="book__form-wrapper">
-            <form class="book__form">
+            <form class="book__form" id="form" method="post">
               <div class="book__container">
                 <div class="book__item">
                   <label for="date1" class="form-label book__label"
@@ -502,7 +502,7 @@
                   <input
                     type="date"
                     id="data1"
-                    class="form-control book__text"
+                    class="form-control book__text _req"
                     placeholder="Дата заезда"
                   />
                 </div>
@@ -513,7 +513,7 @@
                   <input
                     type="date"
                     id="data2"
-                    class="form-control book__text"
+                    class="form-control book__text _req"
                     placeholder="Дата выезда"
                   />
                 </div>
@@ -524,7 +524,7 @@
                   <input
                     type="text"
                     id="name"
-                    class="form-control book__text"
+                    class="form-control book__text _req"
                   />
                 </div>
                 <div class="book__item">
@@ -534,11 +534,11 @@
                   <input
                     type="email"
                     id="email"
-                    class="form-control book__text"
+                    class="form-control book__text _req _email"
                   />
                 </div>
                 <div class="book__item">
-                  <label for="tel" class="form-label book__label"
+                  <label for="tel" class="form-label book__label _req"
                     >Телефон</label
                   >
                   <input type="tel" id="tel" class="form-control book__text" />
@@ -624,7 +624,7 @@
                   ></textarea>
                 </div>
               </div>
-              <button class="book__btn">Забронировать</button>
+              <button class="book__btn" type="submit">Забронировать</button>
             </form>
             <div class="book__rules">
               <h3 class="book_subtitle">
@@ -695,6 +695,7 @@
         <div class="rights">&#xa9; Отель &laquo;Пруссия&raquo; 2023</div>
       </footer>
     </div>
+    <script src="./script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
