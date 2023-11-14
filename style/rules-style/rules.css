@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid;
 }
 
 .container {
@@ -112,7 +111,9 @@ main {
 }
 .container .Text3_1 {
   text-indent: 50px;
-  word-break: break-all;
+  text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
   color: #5f454e;
@@ -124,7 +125,9 @@ ol {
   font-size: 100%;
   color: #5f454e;
   font-weight: 300;
-  word-break: break-all;
+  text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
   padding: 1% 0 0 3%;
   text-indent: 10px;
 }
