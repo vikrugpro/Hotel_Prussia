@@ -81,7 +81,7 @@ h2 {
 
 .txt {
   font-family: "Open Sans", sans-serif;
-  font-size: 100%;
+  font-size: 150%;
   color: #5f454e;
   font-weight: 700;
 }
@@ -98,18 +98,18 @@ h2 {
 
 .txt__bottom {
   font-family: "Open Sans", sans-serif;
-  font-size: 85%;
+  font-size: 150%;
   color: #5f454e;
   font-weight: 700;
 }
 @media (max-width: 768px) {
   .txt__bottom {
-    font-size: 70%;
+    font-size: 80%;
   }
 }
 @media (max-width: 500px) {
   .txt__bottom {
-    font-size: 50%;
+    font-size: 60%;
   }
 }
 
@@ -148,20 +148,14 @@ h2 {
   color: #5f454e;
   font-weight: 600;
   background: linear-gradient(#ffffff, #f5ebe3);
+  padding: 0 5%;
 }
 .header .header__contacts {
   grid-area: 1/1/2/2;
   display: grid;
-  grid-template-columns: 100%/1fr 1fr 2fr 1.5fr 0.5fr;
+  grid-template-columns: 100%/1fr 1.5fr 1fr;
   justify-content: space-around;
   text-align: center;
-}
-.header .header__contacts .header__email {
-  grid-area: 1/2/2/3;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .header .header__contacts .header__phones {
   grid-area: 1/1/2/2;
@@ -172,16 +166,18 @@ h2 {
   gap: 8%;
 }
 .header .header__contacts .header__logo {
-  grid-area: 1/3/2/4;
+  grid-area: 1/2/2/3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 150%;
+  margin-left: 15%;
 }
 @media (max-width: 768px) {
   .header .header__contacts .logo__img {
     display: none;
+    max-width: 100%;
   }
 }
 .header .header__contacts .logo__img-short {
@@ -190,17 +186,17 @@ h2 {
 @media (max-width: 768px) {
   .header .header__contacts .logo__img-short {
     display: block;
+    max-width: 70%;
+    margin-left: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .header .header__contacts .logo__img-short {
+    margin: 15%;
   }
 }
 .header .header__contacts .header__address {
-  grid-area: 1/4/2/5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.header .header__contacts .header__switch-lg {
-  grid-area: 1/5/2/6;
+  grid-area: 1/3/2/4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,7 +218,9 @@ h2 {
 @media (max-width: 500px) {
   .header .header__nav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    padding: 0 10%;
   }
 }
 .header .header__img-wrapper {
