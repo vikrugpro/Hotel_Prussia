@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img-common/logo.ico"
+      type="image/x-icon"
+    />
+    <title>Наши номера</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/rooms-style/rooms.css" />
+  </head>
+  <body>
+    <div class="sticky">
+      <a class="sticky__telegramchat" href="https://t.me/+79118579621"
+        ><img
+          class="button__img"
+          src="./assets/img-common/telegram.svg"
+          alt="Telegram"
+      /></a>
+      <button
+        class="sticky__btn btn"
+        onclick="window.location.href='#bookform'"
+      >
+        Забронировать
+      </button>
+    </div>
+    <div class="container">
+      <header class="header">
+        <div class="header__contacts txt">
+          <div class="header__phones">
+            <div class="header__phone">
+              <a href="tel:+79118579621">+7 911-85-79-621</a>
+            </div>
+            <div class="header__phone">
+              <a href="tel:+74012650057"> +7(4012) 65-00-57 </a>
+            </div>
+          </div>
+          <div class="header__logo logo">
+            <a class="logo__link" href="./index.html">
+              <img
+                class="logo__img"
+                src="./assets/img-common/logo.png"
+                alt="Prussiya-logo"
+              />
+              <img
+                class="logo__img-short"
+                src="./assets/img-common/logo.ico"
+                alt="Short-logo"
+              />
+            </a>
+          </div>
+          <div class="header__address">
+            <a href="#contacts"
+              >236005, г. Калининград,<br />
+              ул. Коммунистическая, 4А</a
+            >
+          </div>
+        </div>
+        <nav class="header__nav nav txt">
+          <a class="nav__link" href="#about">О нас</a>
+          <a class="nav__link" href="#rooms">Наши номера</a>
+          <a class="nav__link" href="#reviews">Отзывы</a>
+          <a class="nav__link" href="#bookform">Забронировать</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="rooms" id="rooms">
+          <h2 class="rooms__smalltitle smalltitle">Наши номера</h2>
+          <div class="rooms__container">
+            <!-- Первый номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Double)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Двухспальная кровать (180*200 см)</li>
+                  <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник</li>
+                  <li class="rooms__item">Стол, шкаф</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено не во всех номерах
+                    (раскладной диван или раскладушка)
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
+              </div>
+              <!-- карусель -->
+              <div
+                id="carouselExampleSlidesOnly"
+                class="carousel slide rooms__img-wrapper"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Второй номер -->
+            <div class="rooms__room">
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Улучшенный двухместный номер I категории (Double)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Двухспальная кровать (170*200 см)</li>
+                  <li class="rooms__item">Площадь номера 26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
+                  <li class="rooms__item">Журнальный столик</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">Барная стойка</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено (раскладной диван или
+                    раскладушка)
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
+              </div>
+            </div>
+            <!-- Третий номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Twin)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">
+                    Две раздельные кровати (90*200 см)
+                  </li>
+                  <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
+                  <li class="rooms__item">Стол, шкаф</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ или ванна, wc, фен, комплект
+                    полотенец, шампунь, гель для душа
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено (раскладной диван)
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
+              </div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Четвертый номер -->
+            <div class="rooms__room">
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Трехместный номер I категории (Triple)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">
+                    Три раздельные кровати (90*200 см)
+                  </li>
+                  <li class="rooms__item">Площадь номера 18-22 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Журнальный столик</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ, wc, фен, комплект полотенец
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место не предусмотрено
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
+              </div>
+            </div>
+            <!-- Пятый номер -->
+            <div class="rooms__room">
+              <div class="rooms__info">
+                <h3 class="rooms__subtitle">
+                  Четырехместный номер I категории (семейный)
+                </h3>
+                <ul class="rooms__list">
+                  <li class="rooms__item">Четыре односпальные кровати</li>
+                  <li class="rooms__item">Площадь номера 30 кв.м.</li>
+                  <li class="rooms__item">Бесплатный Wi-Fi</li>
+                  <li class="rooms__item">Журнальный столик, сервант</li>
+                  <li class="rooms__item">Внутренний телефон</li>
+                  <li class="rooms__item">Телевизор</li>
+                  <li class="rooms__item">
+                    Принадлежности для приготовления чая
+                  </li>
+                  <li class="rooms__item">
+                    В ванной комнате: душ, wc, фен, комплект полотенец
+                  </li>
+                  <li class="rooms__item">
+                    Дополнительное место предусмотрено
+                  </li>
+                </ul>
+                <div class="rooms__price"><b>Цена: руб.* </b></div>
+              </div>
+              <div
+                id="carouselExampleSlidesOnly"
+                class="rooms__img-wrapper carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- карусель -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="/assets/img-common/about-img-1.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-2.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="/assets/img-common/about-img-3.jpg"
+                      class="d-block w-100"
+                      alt="room-photo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rooms__attention">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+            amet ducimus, obcaecati voluptatum aliquam a debitis rem optio
+            excepturi ab dolores repellat aperiam odio pariatur porro minima!
+            Illo, itaque corporis!
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="information txt__bottom" id="information">
+          <div class="information-block block-1">
+            <a href="./personal.html" class="information__link"
+              >О защите персональных данных</a
+            >
+          </div>
+          <div class="information-block block-2">
+            <div class="information__logo-wrapper">
+              <img
+                class="information__logo"
+                src="./assets/img-common/logo_1.png"
+                alt="Логотип отеля"
+              />
+            </div>
+          </div>
+          <div class="information-block block-3">
+            <a href="./rules.html" class="information__link"
+              >Внутренние правила гостиницы</a
+            >
+          </div>
+        </div>
+        <div class="rights">&#xa9; Отель &laquo;Пруссия&raquo; 2023</div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
