@@ -2,7 +2,7 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 6% 1fr 5% / 100%;
+    grid-template: 20% 1fr 5% / 100%;
 }
 .header {
     grid-template: 60% 40%/ 100%;
