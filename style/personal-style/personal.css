@@ -18,7 +18,7 @@
 
 section {
   border: none;
-  padding: 0 1%;
+  padding: 0 7%;
 }
 section:nth-child(odd) {
   background-color: #f5ebe3;
