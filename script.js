@@ -16,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // отправка
         if (error === 0) {
             form.classList.add('_sending');
+            alert(ok);
             let response = await fetch('sendmail.php', {
-                method: 'POST',alert(ok);
+                method: 'POST',
                 body: formData
             });
             // все в порядке
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 form.classList.remove('_sending');
             } else {
                 // сбой
-                alert('Ошибка!');
+                alert('Ошибка!!');
                 form.classList.remove('_sending');
             }
 
