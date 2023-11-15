@@ -11,47 +11,47 @@ $mail->ChartSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
-$mail->setFrom('info@book.ru', '—айт');
+$mail->setFrom('info@book.ru', 'Сайт');
 $mail->addAddress('irina.peslyak.1864@gmail.com');
-$mail->Subject = 'Ќовое бронирование!'
+$mail->Subject = 'Новое бронирование!'
 
-$body = '<h1>Ќовое бронирование!</h1>';
+$body = '<h1>Новое бронирование!</h1>';
 
 // проверить по документации обращени€
 if(trim(!empty($_POST['date1']))) {
- $body.='<p><strong>ƒата заезда:</strong> '.$_POST['email'].'</p>';
+ $body.='<p><strong>Дата заезда:</strong> '.$_POST['email'].'</p>';
 }
 if(trim(!empty($_POST['date2']))) {
- $body.='<p><strong>ƒата выезда:</strong> '.$_POST['email'].'</p>';
+ $body.='<p><strong>Дата выезда:</strong> '.$_POST['email'].'</p>';
 }
 if(trim(!empty($_POST['name']))) {
- $body.='<p><strong>»м€:</strong> '.$_POST['name'].'</p>';
+ $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
 }
 if(trim(!empty($_POST['email']))) {
  $body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 }
 if(trim(!empty($_POST['tel']))) {
- $body.='<p><strong>“елефон:</strong> '.$_POST['tel'].'</p>';
+ $body.='<p><strong>Телефон:</strong> '.$_POST['tel'].'</p>';
 }
 if(trim(!empty($_POST['room']))) {
- $body.='<p><strong>Ќомер:</strong> '.$_POST['room'].'</p>';
+ $body.='<p><strong>Номер:</strong> '.$_POST['room'].'</p>';
 }
 if(trim(!empty($_POST['adult']))) {
- $body.='<p><strong>¬зрослых:</strong> '.$_POST['adult'].'</p>';
+ $body.='<p><strong>Взрослых:</strong> '.$_POST['adult'].'</p>';
 }
 if(trim(!empty($_POST['child']))) {
- $body.='<p><strong>ƒетей:</strong> '.$_POST['child'].'</p>';
+ $body.='<p><strong>Детей:</strong> '.$_POST['child'].'</p>';
 }
 if(trim(!empty($_POST['message']))) {
- $body.='<p><strong>¬аши пожелани€, вопросы:</strong> '.$_POST['message'].'</p>';
+ $body.='<p><strong>Ваши пожелания, вопросы:</strong> '.$_POST['message'].'</p>';
 }
 
 $mail->Body = $body;
 
 if (!$mail->send()) {
-$message = 'ќшибка';
+$message = 'Ошибка';
 } else {
-$message = 'ƒанные отправлены!';
+$message = 'Данные отправлены!';
 }
 
 $response = ['message' => $message];
