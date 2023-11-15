@@ -2,256 +2,32 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 12% 1fr 10.5% / 100%;
+    grid-template: 4% 1fr 10.5% / 100%;
     min-height: 6500px;
 }
-.txt {
-    @include font($font, 150%, $colorplum, 700);
-    @include _tablet {
-        font-size: 80%;
-    }
-    @include _mobile {
-        font-size: 60%;
-    }
-}
-.txt__bottom {
-    @include font($font, 150%, $colorplum, 700);
-    @include _tablet {
-        font-size: 80%;
-    }
-    @include _mobile {
-        font-size: 60%;
-    }
-}
-.sticky {
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    z-index: 9999999;
-    .sticky__btn {
-        @include font($font, 130%, $colorwhite, 400);
-        cursor: pointer;
-        background-color: $colorplum;
-        min-width: 250px;
-        min-height: 50px;
-        width: 30%;
-    }
-    .sticky__btn:hover {
-        @include font($font, 130%, $colorwhite, 700);
-        cursor: pointer;
-        background-color: $colorbrown;
-    }
-}
 .header {
-    grid-area: 1/1/2/2;
-    display: grid;
-    grid-template: 20% 10% 70% / 100%;
-    @include font($font, 100%, $colorplum, 600);
-    background: linear-gradient($colorwhite, $colorbeige);
-    padding: 0 5%;
+    grid-template: 60% 40%/ 100%;
     .header__contacts {
-        grid-area: 1/1/2/2;
-        display: grid;
         grid-template-columns: 100% / 1fr 1.5fr 1fr;
-        justify-content: space-around;
-        text-align: center;
-        // background-color: $colorbeige;
-        .header__phones {
-            grid-area: 1/1/2/2;
-            display: flex;
-            @include flex(column, center, center);
-            gap: 8%;
-        }
-        .header__logo {
-            grid-area: 1/2/2/3;
-            display: flex;
-            @include flex(column, center, center);
-            max-width: 150%;
-            margin-left: 15%;
-        }
-        .logo__img {
-            @include _tablet {
-                display: none;
-                max-width: 100%;
-            }
-        }
-        .logo__img-short {
-            display: none;
-            @include _tablet {
-                display: block;
-                max-width: 70%;
-                margin-left: 30%;
-            }
-            @include _mobile {
-                margin: 15%;
-            }
-        }
-        .header__address {
-            grid-area: 1/3/2/4;
-            display: flex;
-            @include flex(column, center, center);
-        }
-        .logo__img {
-            width: 80%;
-        }
-    }
-    .header__nav {
-        grid-area: 2/1/3/2;
-        width: 100%;
-        padding: 1% 0;
-        display: flex;
-        @include flex(row, space-around, center);
-        flex-wrap: wrap;
-        @include _mobile {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 10%;
-            padding: 0 10%;
-        }
-    }
-    .header__img-wrapper {
-        grid-area: 3/1/4/2;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-image: url(../../assets/img-common/kaliningrag-view.png);
     }
 }
 .main {
     grid-area: 2/1/3/2;
     display: grid;
-    grid-template-rows: 12% 1fr 14% 14%;
-    .about {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .pictures {
         grid-area: 1/1/2/2;
-        .about__img-wrapper {
-            display: flex;
-            @include flex(row, space-around, center);
-            flex-wrap: wrap;
-            padding: 1%;
+        // height: 80vw;
+        .pictures__carousel {
+            max-width: 100%;
         }
     }
-    .rooms {
+    .about {
         grid-area: 2/1/3/2;
-        display: grid;
-        grid-template-rows: 3% 1fr;
-        .rooms__container {
-            grid-area: 2/1/3/2;
-            display: grid;
-            grid-template-rows: repeat(5, 1fr);
-        }
-        .rooms__room {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: space-between;
-            background: linear-gradient($colorwhite, $colorbeige);
-        }
-        .rooms__info {
-            padding: 2% 1%;
-            display: flex;
-            @include flex(column, space-around, center);
-        }
-        .rooms__price {
-            @include font($font, 130%, $colorplum, 400);
-        }
-        .rooms__img-wrapper {
-            display: flex;
-            @include flex(column, space-around, center);
-        }
-        .rooms__attention {
-            margin: 1%;
-            padding: 1%;
-            border-radius: 5px;
-            background-color: $colorbrown;
-            font-weight: 600;
-        }
-    }
-    .reviews {
-        grid-area: 3/1/4/2;
-        display: grid;
-        grid-template: 10% 90% / 100%;
-        .reviews__container {
-            background-color: antiquewhite;
-            grid-area: 2/1/3/2;
-            display: grid;
-            grid-template: repeat(2, 50%) / 100%;
-            gap: 2%;
-            .reviews__box {
-                display: flex;
-                @include flex(row, space-around, flex-start);
-                gap: 5%;
-            }
-            .reviews__img {
-                max-width: 100%;
-            }
-            @include _tablet {
-                grid-template: 100% / repeat(2, 50%);
-            }
-            @include _mobile {
-                grid-template: 100% / 100%;
-                .rewiews_unactive {
-                    display: none;
-                }
-            }
-            // для затемнения при отправке
-            .book__form::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left:0;
-                width: 100%;
-                height: 100%;
-                background-color: $colorplum ;
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.5s ease 0s;
-            }
-            .book__form._sending::after {
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-    }
-    .book {
-        grid-area: 4/1/5/2;
-        .book__form {
-            display: flex;
-            @include flex(column, space-around, center);
-        }
-        .book__form-wrapper {
-            background-color: $colorbeige;
-            border-radius: 15px;
-            padding: 1%;
-            color: $colorplum;
-        }
-        .book__container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1%;
-            align-items: center;
-        }
-        .book__btn {
-            margin: 0.5%;
-        }
-
     }
 }
 .footer {
     grid-area: 3/1/4/2;
-    .contacts {
-        padding: 1% 5%;
-        .contacts__map-wrapper {
-            display: flex;
-            @include flex(row, center, center);
-            padding: 1% 0;
-        }
-        .contacts__map {
-            min-width: 280px;
-            min-height: 300px;
-            width: 100%;
-            border: 1px solid $colorplum;
-            border-radius: 15px;
-        }
-    }
     .information {
         display: grid;
         grid-template-columns: 6fr 1fr 6fr;
@@ -270,5 +46,3 @@
         color: $colorwhite;
     }
 }
-
-
