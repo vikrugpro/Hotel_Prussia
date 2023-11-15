@@ -76,294 +76,359 @@
       <main class="main">
         <section class="rooms" id="rooms">
           <h2 class="rooms__smalltitle smalltitle">Наши номера</h2>
+          <div class="rooms__attention">
+            Мы рады предложить нашим гостям 23 уютных номера. <br />
+            В каждом номере есть холодильник, телевизор, чайник, фен, туалет с
+            душевой кабиной или ванной.<br />
+            Мы предоставляем нашим гостям бесплатный Wi-Fi.
+          </div>
           <div class="rooms__container">
             <!-- Первый номер -->
-            <div class="rooms__room">
-              <div class="rooms__info">
+            <div class="rooms_room room-example1">
+              <div>
                 <h3 class="rooms__subtitle">
                   Двухместный номер I категории (Double)
                 </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">Двухспальная кровать (180*200 см)</li>
-                  <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Холодильник</li>
-                  <li class="rooms__item">Стол, шкаф</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ или ванна, wc, фен, комплект
-                    полотенец, шампунь, гель для душа
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место предусмотрено не во всех номерах
-                    (раскладной диван или раскладушка)
-                  </li>
-                </ul>
-                <div class="rooms__price"><b>Цена: руб.* </b></div>
+                <div
+                  id="carousel_1"
+                  class="carousel slide rooms__img-wrapper"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img-common/about-img-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#collapseroomex"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseroomex"
+                  >Подробнее о номере
+                </a>
               </div>
-              <!-- карусель -->
-              <div
-                id="carouselExampleSlidesOnly"
-                class="carousel slide rooms__img-wrapper"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="./assets/img-common/about-img-1.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/img-common/about-img-2.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="./assets/img-common/about-img-3.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
+              <div class="collapse" id="collapseroomex">
+                <div class="card card-body">
+                  <ul class="rooms__list">
+                    <li class="rooms__item">
+                      Двухспальная кровать (180*200 см)
+                    </li>
+                    <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                    <li class="rooms__item">Бесплатный Wi-Fi</li>
+                    <li class="rooms__item">Холодильник</li>
+                    <li class="rooms__item">Стол, шкаф</li>
+                    <li class="rooms__item">Внутренний телефон</li>
+                    <li class="rooms__item">Телевизор</li>
+                    <li class="rooms__item">
+                      В ванной комнате: душ или ванна, wc, фен, комплект
+                      полотенец, шампунь, гель для душа
+                    </li>
+                    <li class="rooms__item">
+                      Дополнительное место предусмотрено не во всех номерах
+                      (раскладной диван или раскладушка)
+                    </li>
+                  </ul>
+                  <div class="rooms__price"><b>Цена: руб.* </b></div>
                 </div>
               </div>
             </div>
-            <!-- Второй номер -->
-            <div class="rooms__room">
-              <div
-                id="carouselExampleSlidesOnly"
-                class="rooms__img-wrapper carousel slide"
-                data-bs-ride="carousel"
-              >
-                <!-- карусель -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="/assets/img-common/about-img-1.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-2.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-3.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="rooms__info">
+            <div class="rooms_room room-example">
+              <div>
                 <h3 class="rooms__subtitle">
-                  Улучшенный двухместный номер I категории (Double)
+                  Двухместный номер I категории (Double)
                 </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">Двухспальная кровать (170*200 см)</li>
-                  <li class="rooms__item">Площадь номера 26 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
-                  <li class="rooms__item">Журнальный столик</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">Барная стойка</li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ или ванна, wc, фен, комплект
-                    полотенец, шампунь, гель для душа
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место предусмотрено (раскладной диван или
-                    раскладушка)
-                  </li>
-                </ul>
-                <div class="rooms__price"><b>Цена: руб.* </b></div>
+                <div
+                  id="carousel_1"
+                  class="carousel slide rooms__img-wrapper"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img-common/about-img-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#collapseroom1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseroom1"
+                  >Подробнее о номере
+                </a>
               </div>
-            </div>
-            <!-- Третий номер -->
-            <div class="rooms__room">
-              <div class="rooms__info">
-                <h3 class="rooms__subtitle">
-                  Двухместный номер I категории (Twin)
-                </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">
-                    Две раздельные кровати (90*200 см)
-                  </li>
-                  <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Холодильник (не во всех номерах)</li>
-                  <li class="rooms__item">Стол, шкаф</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ или ванна, wc, фен, комплект
-                    полотенец, шампунь, гель для душа
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место предусмотрено (раскладной диван)
-                  </li>
-                </ul>
-                <div class="rooms__price"><b>Цена: руб.* </b></div>
-              </div>
-              <div
-                id="carouselExampleSlidesOnly"
-                class="rooms__img-wrapper carousel slide"
-                data-bs-ride="carousel"
-              >
-                <!-- карусель -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="/assets/img-common/about-img-1.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-2.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-3.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
+              <div class="collapse" id="collapseroom1">
+                <div class="card card-body">
+                  <ul class="rooms__list">
+                    <li class="rooms__item">
+                      Двухспальная кровать (180*200 см)
+                    </li>
+                    <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                    <li class="rooms__item">Бесплатный Wi-Fi</li>
+                    <li class="rooms__item">Холодильник</li>
+                    <li class="rooms__item">Стол, шкаф</li>
+                    <li class="rooms__item">Внутренний телефон</li>
+                    <li class="rooms__item">Телевизор</li>
+                    <li class="rooms__item">
+                      В ванной комнате: душ или ванна, wc, фен, комплект
+                      полотенец, шампунь, гель для душа
+                    </li>
+                    <li class="rooms__item">
+                      Дополнительное место предусмотрено не во всех номерах
+                      (раскладной диван или раскладушка)
+                    </li>
+                  </ul>
+                  <div class="rooms__price"><b>Цена: руб.* </b></div>
                 </div>
               </div>
             </div>
-            <!-- Четвертый номер -->
-            <div class="rooms__room">
-              <div
-                id="carouselExampleSlidesOnly"
-                class="rooms__img-wrapper carousel slide"
-                data-bs-ride="carousel"
-              >
-                <!-- карусель -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="/assets/img-common/about-img-1.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-2.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-3.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
+            <div class="rooms_room room-example">
+              <div>
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Double)
+                </h3>
+                <div
+                  id="carousel_1"
+                  class="carousel slide rooms__img-wrapper"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img-common/about-img-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
                   </div>
                 </div>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#collapseroom1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseroom1"
+                  >Подробнее о номере
+                </a>
               </div>
-              <div class="rooms__info">
-                <h3 class="rooms__subtitle">
-                  Трехместный номер I категории (Triple)
-                </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">
-                    Три раздельные кровати (90*200 см)
-                  </li>
-                  <li class="rooms__item">Площадь номера 18-22 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Журнальный столик</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ, wc, фен, комплект полотенец
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место не предусмотрено
-                  </li>
-                </ul>
-                <div class="rooms__price"><b>Цена: руб.* </b></div>
-              </div>
-            </div>
-            <!-- Пятый номер -->
-            <div class="rooms__room">
-              <div class="rooms__info">
-                <h3 class="rooms__subtitle">
-                  Четырехместный номер I категории (семейный)
-                </h3>
-                <ul class="rooms__list">
-                  <li class="rooms__item">Четыре односпальные кровати</li>
-                  <li class="rooms__item">Площадь номера 30 кв.м.</li>
-                  <li class="rooms__item">Бесплатный Wi-Fi</li>
-                  <li class="rooms__item">Журнальный столик, сервант</li>
-                  <li class="rooms__item">Внутренний телефон</li>
-                  <li class="rooms__item">Телевизор</li>
-                  <li class="rooms__item">
-                    Принадлежности для приготовления чая
-                  </li>
-                  <li class="rooms__item">
-                    В ванной комнате: душ, wc, фен, комплект полотенец
-                  </li>
-                  <li class="rooms__item">
-                    Дополнительное место предусмотрено
-                  </li>
-                </ul>
-                <div class="rooms__price"><b>Цена: руб.* </b></div>
-              </div>
-              <div
-                id="carouselExampleSlidesOnly"
-                class="rooms__img-wrapper carousel slide"
-                data-bs-ride="carousel"
-              >
-                <!-- карусель -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="/assets/img-common/about-img-1.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-2.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="/assets/img-common/about-img-3.jpg"
-                      class="d-block w-100"
-                      alt="room-photo"
-                    />
-                  </div>
+              <div class="collapse" id="collapseroom1">
+                <div class="card card-body">
+                  <ul class="rooms__list">
+                    <li class="rooms__item">
+                      Двухспальная кровать (180*200 см)
+                    </li>
+                    <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                    <li class="rooms__item">Бесплатный Wi-Fi</li>
+                    <li class="rooms__item">Холодильник</li>
+                    <li class="rooms__item">Стол, шкаф</li>
+                    <li class="rooms__item">Внутренний телефон</li>
+                    <li class="rooms__item">Телевизор</li>
+                    <li class="rooms__item">
+                      В ванной комнате: душ или ванна, wc, фен, комплект
+                      полотенец, шампунь, гель для душа
+                    </li>
+                    <li class="rooms__item">
+                      Дополнительное место предусмотрено не во всех номерах
+                      (раскладной диван или раскладушка)
+                    </li>
+                  </ul>
+                  <div class="rooms__price"><b>Цена: руб.* </b></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="rooms__attention">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            amet ducimus, obcaecati voluptatum aliquam a debitis rem optio
-            excepturi ab dolores repellat aperiam odio pariatur porro minima!
-            Illo, itaque corporis!
+            <div class="rooms_room room-example">
+              <div>
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Double)
+                </h3>
+                <div
+                  id="carousel_1"
+                  class="carousel slide rooms__img-wrapper"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img-common/about-img-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#collapseroom1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseroom1"
+                  >Подробнее о номере
+                </a>
+              </div>
+              <div class="collapse" id="collapseroom1">
+                <div class="card card-body">
+                  <ul class="rooms__list">
+                    <li class="rooms__item">
+                      Двухспальная кровать (180*200 см)
+                    </li>
+                    <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                    <li class="rooms__item">Бесплатный Wi-Fi</li>
+                    <li class="rooms__item">Холодильник</li>
+                    <li class="rooms__item">Стол, шкаф</li>
+                    <li class="rooms__item">Внутренний телефон</li>
+                    <li class="rooms__item">Телевизор</li>
+                    <li class="rooms__item">
+                      В ванной комнате: душ или ванна, wc, фен, комплект
+                      полотенец, шампунь, гель для душа
+                    </li>
+                    <li class="rooms__item">
+                      Дополнительное место предусмотрено не во всех номерах
+                      (раскладной диван или раскладушка)
+                    </li>
+                  </ul>
+                  <div class="rooms__price"><b>Цена: руб.* </b></div>
+                </div>
+              </div>
+            </div>
+            <div class="rooms_room room-example">
+              <div>
+                <h3 class="rooms__subtitle">
+                  Двухместный номер I категории (Double)
+                </h3>
+                <div
+                  id="carousel_1"
+                  class="carousel slide rooms__img-wrapper"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/img-common/about-img-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/img-common/about-img-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#collapseroom1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseroom1"
+                  >Подробнее о номере
+                </a>
+              </div>
+              <div class="collapse" id="collapseroom1">
+                <div class="card card-body">
+                  <ul class="rooms__list">
+                    <li class="rooms__item">
+                      Двухспальная кровать (180*200 см)
+                    </li>
+                    <li class="rooms__item">Площадь номера 13-26 кв.м.</li>
+                    <li class="rooms__item">Бесплатный Wi-Fi</li>
+                    <li class="rooms__item">Холодильник</li>
+                    <li class="rooms__item">Стол, шкаф</li>
+                    <li class="rooms__item">Внутренний телефон</li>
+                    <li class="rooms__item">Телевизор</li>
+                    <li class="rooms__item">
+                      В ванной комнате: душ или ванна, wc, фен, комплект
+                      полотенец, шампунь, гель для душа
+                    </li>
+                    <li class="rooms__item">
+                      Дополнительное место предусмотрено не во всех номерах
+                      (раскладной диван или раскладушка)
+                    </li>
+                  </ul>
+                  <div class="rooms__price"><b>Цена: руб.* </b></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
