@@ -155,7 +155,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8%;
 }
 .header .header__contacts .header__logo {
   grid-area: 1/2/2/3;
@@ -164,7 +163,6 @@ h2 {
   justify-content: center;
   align-items: center;
   max-width: 150%;
-  margin-left: 15%;
 }
 @media (max-width: 768px) {
   .header .header__contacts .logo__img {
@@ -201,9 +199,10 @@ h2 {
 @media (max-width: 500px) {
   .header .header__nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10%;
-    padding: 0 10%;
+    padding: 10% 10%;
   }
 }
 

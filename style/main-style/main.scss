@@ -1,48 +1,76 @@
 @import "../vars";
 @import "../template";
+
 .container {
-    display: grid;
-    grid-template: 4% 1fr 10.5% / 100%;
-    min-height: 6500px;
+  display: grid;
+  grid-template: 15% 1fr 10.5% / 100%;
+  min-height: 500px;
+  background-color: $colorbeige;
 }
 .header {
-    grid-template: 60% 40%/ 100%;
-    .header__contacts {
-        grid-template-columns: 100% / 1fr 1.5fr 1fr;
+  grid-template: 60% 40%/ 100%;
+  padding-top: 1.5%;
+  @include font($font, 1rem, $colorplum, 600);
+  .header__contacts {
+    grid-template-columns: 100% / 1fr 1.5fr 1fr;
+    font-size: 1.1rem;
+    @include _mobile {
+      font-size: 0.7rem;
     }
+  }
+  .header__nav {
+    font-size: 1.3rem;
+  }
+}
+
+.logo__link {
+  display: flex;
+  justify-content: center;
 }
 .main {
-    grid-area: 2/1/3/2;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    .pictures {
-        grid-area: 1/1/2/2;
-        // height: 80vw;
-        .pictures__carousel {
-            max-width: 100%;
-        }
+  //   grid-area: 2/1/3/2;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+
+  .pictures {
+    grid-area: 1/1/2/2;
+    .pictures__carousel {
+      max-width: 100%;
     }
-    .about {
-        grid-area: 2/1/3/2;
-    }
+  }
+
+  .about__text-wrapper {
+    @include font($font, 125%, $colorplum, 500);
+  }
+  p {
+    text-align: center;
+  }
+  .about {
+    padding-bottom: 1%;
+  }
 }
 .footer {
-    grid-area: 3/1/4/2;
-    .information {
-        display: grid;
-        grid-template-columns: 6fr 1fr 6fr;
-        .information-block {
-            display: flex;
-            @include flex(row, space-around, center);
-            padding-bottom: 5%;
-            background: linear-gradient($colorbeige, $colorwhite);
-        }
+  grid-area: 3/1/4/2;
+  margin-top: 1%;
+  .information {
+    display: grid;
+    grid-template-columns: 6fr 1fr 6fr;
+    .information-block {
+      display: flex;
+      @include flex(row, space-around, center);
+      padding-bottom: 5%;
+      background: linear-gradient($colorbeige, $colorwhite);
     }
-    .rights {
-        display: flex;
-        @include flex(row, center, center);
-        padding: 1.5% 0;
-        background-color: $colorbrown;
-        color: $colorwhite;
+    .information__logo-wrapper {
+      margin-bottom: 10%;
     }
+  }
+  .rights {
+    display: flex;
+    @include flex(row, center, center);
+    padding: 1.5% 0;
+    background-color: $colorbrown;
+    color: $colorwhite;
+    font-size: 125%;
+  }
 }
