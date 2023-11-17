@@ -287,21 +287,78 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 20% 1fr 5%/100%;
+  grid-template: 18% 1fr 19%/100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template: 15% 1fr 8%/100%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    grid-template: 18% 1fr 12%/100%;
+  }
 }
 
 .header {
   grid-template: 60% 40%/100%;
 }
 .header .header__contacts {
-  grid-template-columns: 100%/1fr 1.5fr 1fr;
+  grid-template: 100%/1fr 1.5fr 1fr;
+  gap: 1%;
+}
+@media (max-width: 768px) {
+  .header .header__contacts {
+    grid-template: 100%/2fr 1fr 2fr;
+    font-family: "Open Sans", sans-serif;
+    font-size: 80%;
+    color: #5f454e;
+    font-weight: 700;
+  }
+}
+@media (max-width: 500px) {
+  .header .header__contacts {
+    font-family: "Open Sans", sans-serif;
+    font-size: 50%;
+    color: #5f454e;
+    font-weight: 700;
+  }
+}
+.header .header__nav {
+  border-bottom: 1px solid #a58076;
+}
+@media (max-width: 500px) {
+  .header .header__nav {
+    font-family: "Open Sans", sans-serif;
+    font-size: 65%;
+    color: #5f454e;
+    font-weight: 700;
+  }
 }
 .header .header__phone {
   font-size: 80%;
 }
+.header .logo__img {
+  width: 100%;
+}
+.header .logo__img-short {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .header__address {
+  font-size: 78%;
+}
+.header .txt {
+  font-family: "Open Sans", sans-serif;
+  font-size: 120%;
+  color: #5f454e;
+  font-weight: 700;
+}
 @media (max-width: 768px) {
   .header .txt {
-    font-size: 100%;
+    font-size: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -311,48 +368,80 @@ footer .rights {
 }
 
 .reviews {
-  grid-template: 10% 90%/100%;
+  grid-template: 15% 1fr/100%;
+  margin-top: 5%;
+  padding: 0 5%;
 }
-
-.reviews__container {
-  background-color: antiquewhite;
+.reviews .reviews__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2%;
 }
 @media (max-width: 768px) {
-  .reviews__container {
+  .reviews .reviews__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
 @media (max-width: 500px) {
-  .reviews__container {
+  .reviews .reviews__container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
 }
-.reviews__container .reviews__img {
+.reviews .reviews__container .reviews__img {
   max-width: 100%;
 }
+.reviews .reviews__subtitle {
+  margin-top: 2%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 120%;
+  color: #5f454e;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .reviews .reviews__subtitle {
+    font-size: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .reviews .reviews__subtitle {
+    font-size: 80%;
+  }
+}
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 .footer .information {
   display: grid;
   grid-template-columns: 6fr 1fr 6fr;
+  width: 100%;
 }
 .footer .information .information-block {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2%;
   padding-bottom: 5%;
-  background: linear-gradient(#f5ebe3, #ffffff);
 }
-@media (max-width: 768px) {
-  .footer .information .information-block .information__logo {
-    height: 70%;
-    width: 70%;
+@media (max-width: 500px) {
+  .footer .information .information-block {
+    padding-bottom: 15%;
+  }
+}
+.footer .information .information__logo {
+  width: 100%;
+  padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .footer .information .information__logo {
+    display: none;
   }
 }
 .footer .rights {
@@ -361,24 +450,24 @@ footer .rights {
   justify-content: center;
   align-items: center;
   padding: 1.5% 0;
-  background-color: #a58076;
+  width: 100%;
+  background-color: #5f454e;
   color: #ffffff;
 }
 
 .txt__bottom {
   font-family: "Open Sans", sans-serif;
-  font-size: 150%;
+  font-size: 120%;
   color: #5f454e;
   font-weight: 700;
 }
 @media (max-width: 768px) {
   .txt__bottom {
-    font-size: 80%;
-    font-weight: 500;
+    font-size: 90%;
   }
 }
 @media (max-width: 500px) {
   .txt__bottom {
-    font-size: 60%;
+    font-size: 70%;
   }
 }/*# sourceMappingURL=reviews.css.map */
