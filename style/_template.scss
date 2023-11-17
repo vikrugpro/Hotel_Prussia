@@ -72,24 +72,60 @@ h2 {
 .sticky {
     position: fixed;
     right: 2%;
-    bottom: 2%;
+    bottom: 17%;
     z-index: 9999999;
     .sticky__btn {
         @include font($font, 130%, $colorwhite, 400);
+        @include _tablet {
+            font-size: 90%;
+        }
+        @include _mobile {
+            font-size: 80%;
+        }
         cursor: pointer;
         background-color: $colorplum;
         min-width: 250px;
         min-height: 50px;
         width: 30%;
+        @include _tablet {
+            min-width: 160px;
+            min-height: 10px;
+            margin: 1%;
+        }
         @include _mobile {
-            @include font($font, 100%, $colorwhite, 400);
-            min-width: 180px;
+            min-width: 130px;
+            min-height: 10px;
+            margin: 1%;
         }
     }
     .sticky__btn:hover {
+        @include _tablet {
+            min-width: 160px;
+            min-height: 10px;
+            margin: 1%;
+        }
+        @include _mobile {
+            min-width: 130px;
+            min-height: 10px;
+            margin: 1%;
+        }
         @include font($font, 130%, $colorwhite, 700);
+        @include _tablet {
+            font-size: 90%;
+        }
+        @include _mobile {
+            font-size: 80%;
+        }
         cursor: pointer;
         background-color: $colorbrown;
+    }
+    img {
+        @include _tablet {
+            width: 20%;
+        }
+        @include _mobile {
+            width: 23%;
+        }
     }
 }
 .header {
@@ -155,4 +191,15 @@ main {
 }
 footer {
     background: linear-gradient($colorwhite, $colorbeige);
+    .rights {
+        background-color: $colorplum;
+        color: $colorwhite;
+        font-size: 80%;
+        @include _tablet {
+            font-size: 60%;
+        }
+        @include _mobile {
+            font-size: 50%;
+        }
+    }
 }

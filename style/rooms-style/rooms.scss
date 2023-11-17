@@ -1,21 +1,27 @@
 @import "../vars";
 @import "../template";
-// * {
-//     border: solid 1px;
-// }
+* {
+    border: solid 1px;
+}
 .container {
     display: grid;
-    grid-template: 6% 1fr 0.1fr/ 100%;
+    grid-template: 7% 1fr 8%/ 100%;
     min-height: 200vh;
     @include _tablet {
-        grid-template: 4% 1fr 0.1fr/ 100%;
+        grid-template: 6% 1fr 5%/ 100%;
     }
     @include _mobile {
-        grid-template: 6% 1fr 0.1fr/ 100%;
+        grid-template: 6% 1fr 3%/ 100%;
     }
 }
 .header {
     grid-template: 70% 30%/ 100%;
+    @include _tablet {
+        grid-template: 75% 25%/ 100%;
+    }
+    @include _mobile {
+        grid-template: 60% 40%/ 100%;
+    }
     .header__contacts {
         grid-template-columns: 100% / 1fr 1fr 1fr;
         gap: 1%;
@@ -38,10 +44,10 @@
     display: grid;
     grid-template-rows: 2% 7% 1fr 20%;
     @include _tablet {
-        grid-template-rows: 1% 6% 1fr 20%;
+        grid-template-rows: 2% 6% 1fr 10%;
     }
     @include _mobile {
-        grid-template-rows: 1% 6% 1fr 20%;
+        grid-template-rows: 2% 6% 1fr 13%;
     }
     padding: 2% 3%;
     overflow-y: auto;
@@ -111,7 +117,8 @@
         max-height: 100%;
     }
     .rooms__attention {
-        padding-top: 7%;
+        display: flex;
+        @include flex(column, flex-end, flex-start);
         padding-bottom: 1%;
         overflow-y: auto;
     }
@@ -205,14 +212,5 @@
         @include flex(row, center, center);
         padding: 1.5% 0;
         width: 100%;
-        background-color: $colorplum;
-        color: $colorwhite;
-        font-size: 80%;
-        @include _tablet {
-            font-size: 60%;
-        }
-        @include _mobile {
-            font-size: 50%;
-        }
     }
 }
