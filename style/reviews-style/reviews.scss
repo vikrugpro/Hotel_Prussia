@@ -2,19 +2,52 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 20% 1fr 5% / 100%;
+    grid-template: 18% 1fr 19% / 100%;
+    min-height: 100vh;
+    @include _tablet {
+        grid-template: 15% 1fr 8% / 100%;
+    }
+    @include _mobile {
+        grid-template: 18% 1fr 12% / 100%;
+    }
 }
 .header {
     grid-template: 60% 40%/ 100%;
     .header__contacts {
-        grid-template-columns: 100% / 1fr 1.5fr 1fr;
+        grid-template: 100% / 1fr 1.5fr 1fr;
+        gap: 1%;
+        @include _tablet {
+            grid-template: 100% / 2fr 1fr 2fr;
+            @include font($font, 80%, $colorplum, 700);
+        }
+        @include _mobile {
+            @include font($font, 50%, $colorplum, 700);
+        }
+    }
+    .header__nav {
+        border-bottom: 1px solid $colorbrown;
+        @include _mobile {
+            @include font($font, 65%, $colorplum, 700);
+        }
     }
     .header__phone {
         font-size: 80%;
     }
+    .logo__img {
+        width: 100%;
+    }
+    .logo__img-short {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header__address {
+        font-size: 78%;
+    }
     .txt {
+        @include font($font, 120%, $colorplum, 700);
         @include _tablet {
-            font-size: 100%;
+            font-size: 90%;
         }
         @include _mobile {
             font-size: 70%;
@@ -22,40 +55,59 @@
     }
 }
 .reviews {
-    grid-template: 10% 90% / 100%;
-}
-.reviews__container {
-    background-color: antiquewhite;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2%;
-    @include _tablet {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template: 15% 1fr / 100%;
+    margin-top: 5%;
+    padding: 0 5%;
+    .reviews__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2%;
+        @include _tablet {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        }
+        @include _mobile {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        } 
+        .reviews__img {
+            max-width: 100%;
+        }
     }
-    @include _mobile {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    } 
-    .reviews__img {
-        max-width: 100%;
+    .reviews__subtitle {
+        margin-top: 2%;
+        @include font($font, 120%, $colorplum, 700);
+        @include _tablet {
+            font-size: 100%;
+        }
+        @include _mobile {
+            font-size: 80%;
+        }
     }
 }
+
 .footer {
+    display: flex;
+    @include flex(column,flex-end, flex-end);
     .information {
         display: grid;
         grid-template-columns: 6fr 1fr 6fr;
+        width: 100%;
         .information-block {
             display: flex;
             @include flex(row, space-around, center);
+            padding: 0 2%;
             padding-bottom: 5%;
-            background: linear-gradient($colorbeige, $colorwhite);
-            .information__logo {
-                @include _tablet {
-                height: 70%;
-                width: 70%;
-                }
+            @include _mobile {
+                padding-bottom: 15%;
+            }
+        }
+        .information__logo {
+            width: 100%;
+            padding-bottom: 5%;
+            @include _mobile {
+                display: none;
             }
         }
     }
@@ -63,17 +115,17 @@
         display: flex;
         @include flex(row, center, center);
         padding: 1.5% 0;
-        background-color: $colorbrown;
+        width: 100%;
+        background-color: $colorplum;
         color: $colorwhite;
     }
 }
 .txt__bottom {
-    @include font($font, 150%, $colorplum, 700);
+    @include font($font, 120%, $colorplum, 700);
     @include _tablet {
-        font-size: 80%;
-        font-weight: 500;
+        font-size: 90%;
     }
     @include _mobile {
-        font-size: 60%;
+        font-size: 70%;
     }
 }
