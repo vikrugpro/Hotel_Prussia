@@ -1,18 +1,31 @@
 @import "../vars";
 @import "../template";
-* {
-    border: solid 1px;
-}
+// * {
+//     border: solid 1px;
+// }
 .container {
     display: grid;
     grid-template: 6% 1fr 0.1fr/ 100%;
     min-height: 200vh;
+    @include _tablet {
+        grid-template: 4% 1fr 0.1fr/ 100%;
+    }
+    @include _mobile {
+        grid-template: 6% 1fr 0.1fr/ 100%;
+    }
 }
 .header {
     grid-template: 70% 30%/ 100%;
     .header__contacts {
         grid-template-columns: 100% / 1fr 1fr 1fr;
         gap: 1%;
+        @include _tablet {
+            grid-template: 100% / 2fr 1fr 2fr;
+            @include font($font, 80%, $colorplum, 700);
+        }
+        @include _mobile {
+            @include font($font, 50%, $colorplum, 700);
+        }
     }
     .header__logo {
         width: 80%;
@@ -23,33 +36,76 @@
 }
 .rooms {
     display: grid;
-    grid-template-rows: 2% 6% 1fr 20%;
+    grid-template-rows: 2% 7% 1fr 20%;
+    @include _tablet {
+        grid-template-rows: 1% 6% 1fr 20%;
+    }
+    @include _mobile {
+        grid-template-rows: 1% 6% 1fr 20%;
+    }
     padding: 2% 3%;
+    overflow-y: auto;
     .smalltitle {
         @include font($font, 200%, $colorplum, 700);
         padding: 0;
+        @include _tablet {
+            font-size: 150%;
+        }
+        @include _tablet {
+            font-size: 100%;
+        }
     }
     .text_1 {
         padding: 1%;
         padding-top: 5%;
         padding-bottom: 5%;
+        @include _tablet {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+        @include _mobile {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
     }
     .rooms__text {
         padding: 1%;
         @include font($font, 160%, $colorplum, 400);
+        @include _tablet {
+            font-size: 130%;
+        }
+        @include _tablet {
+            font-size: 80%;
+        }
     }
     .rooms__container {
         display: grid;
         grid-template: 1fr 1fr 1fr/1fr 1fr;
-        gap: 2%;
+        gap: 3%;
         @include _mobile {
+            padding: 1% 4%;
             display: flex;
             flex-direction: column;
+            gap: 15px;
         }
     }
     .rooms__subtitle {
         text-align: center;
         @include font($font, 160%, $colorplum, 700);
+        @include _tablet {
+            font-size: 130%;
+        }
+        @include _tablet {
+            font-size: 80%;
+        }
+    }
+    .rooms__room {
+        @include _mobile {
+            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     .carousel-item img {
         max-height: 100%;
@@ -61,6 +117,12 @@
     }
     button {
         @include font($font, 130%, $colorwhite, 400);
+        @include _tablet {
+            font-size: 90%;
+        }
+        @include _mobile {
+            font-size: 80%;
+        }
         cursor: pointer;
         background-color: $colorplum;
         border-radius: 10px;
@@ -68,19 +130,73 @@
         min-height: 50px;
         width: 30%;
         margin: 1%;
+        @include _tablet {
+            min-width: 200px;
+            min-height: 10px;
+            margin: 1%;
+        }
+        @include _mobile {
+            min-width: 180px;
+            min-height: 10px;
+            margin: 1%;
+        }
+    }
+    button:hover {
+        @include font($font, 130%, $colorwhite, 700);
+        @include _tablet {
+            font-size: 90%;
+        }
+        @include _mobile {
+            font-size: 80%;
+        }
+        cursor: pointer;
+        background-color: $colorbrown;
+        border: 1px solid $colorwhite;
+        @include _tablet {
+            min-width: 200px;
+            min-height: 10px;
+            margin: 1%;
+        }
+        @include _mobile {
+            min-width: 180px;
+            min-height: 10px;
+            margin: 1%;
+        }
     }
     .rooms__item,
     .rooms__price {
         @include font($font, 130%, $colorplum, 400);
+        @include _tablet {
+            font-size: 80%;
+        }
+        @include _mobile {
+            font-size: 80%;
+        }
     }
 }
 .footer {
+    display: flex;
+    @include flex(column, flex-end, flex-end);
+    .information__logo-wrapper {
+        @include _tablet {
+            width: 60%;
+        }
+        @include _mobile {
+            display: none;
+        }
+    }
+    .information__logo {
+        width: 100%;
+        padding-bottom: 5%;
+    }
     .information {
+        width: 100%;
         display: grid;
         grid-template-columns: 6fr 1fr 6fr;
         .information-block {
             display: flex;
             @include flex(row, space-around, center);
+            padding: 0 5%;
             padding-bottom: 5%;
         }
     }
@@ -88,6 +204,15 @@
         display: flex;
         @include flex(row, center, center);
         padding: 1.5% 0;
+        width: 100%;
         background-color: $colorplum;
+        color: $colorwhite;
+        font-size: 80%;
+        @include _tablet {
+            font-size: 60%;
+        }
+        @include _mobile {
+            font-size: 50%;
+        }
     }
 }
