@@ -10,7 +10,6 @@
   margin: 0 auto;
   padding: 0;
   max-width: 1640px;
-  background-color: #f5ebe3;
   color: #5f454e;
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
@@ -21,9 +20,6 @@
 section {
   border: none;
   padding: 0 7%;
-}
-section:nth-child(odd) {
-  background-color: #f5ebe3;
 }
 
 a {
@@ -142,7 +138,7 @@ h2 {
   font-size: 100%;
   color: #5f454e;
   font-weight: 600;
-  background: linear-gradient(#ffffff, #f5ebe3);
+  background: linear-gradient(#f5ebe3, #ffffff);
   padding: 0 5%;
 }
 .header .header__contacts {
@@ -207,6 +203,14 @@ h2 {
     gap: 10%;
     padding: 0 10%;
   }
+}
+
+main {
+  background-color: #ffffff;
+}
+
+footer {
+  background: linear-gradient(#ffffff, #f5ebe3);
 }
 
 main {

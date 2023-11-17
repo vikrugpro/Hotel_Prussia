@@ -9,16 +9,16 @@
     margin: 0 auto;
     padding: 0;
     max-width: 1640px;
-    background-color: $colorbeige;
+    // background-color: $colorbeige;
     color: $colorplum;
     @include font($font, 100%, $colorplum, 400);
 }
 section {
     border: none;
     padding: 0 7%;
-    &:nth-child(odd) {
-        background-color: $colorbeige;
-    }
+    // &:nth-child(odd) {
+    //     background-color: $colorbeige;
+    // }
 }
 a {
     text-decoration: none;
@@ -92,7 +92,7 @@ h2 {
     grid-area: 1/1/2/2;
     display: grid;
     @include font($font, 100%, $colorplum, 600);
-    background: linear-gradient($colorwhite, $colorbeige);
+    background: linear-gradient($colorbeige, $colorwhite);
     padding: 0 5%;
     .header__contacts {
         grid-area: 1/1/2/2;
@@ -145,4 +145,10 @@ h2 {
             padding: 0 10%;
         }
     }
+}
+main {
+    background-color: $colorwhite;
+}
+footer {
+    background: linear-gradient($colorwhite, $colorbeige);
 }
