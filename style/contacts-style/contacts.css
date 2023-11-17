@@ -107,7 +107,7 @@ h2 {
 .sticky {
   position: fixed;
   right: 2%;
-  bottom: 17%;
+  bottom: 2%;
   z-index: 9999999;
 }
 .sticky .sticky__btn {
@@ -121,28 +121,13 @@ h2 {
   min-height: 50px;
   width: 30%;
 }
-@media (max-width: 768px) {
-  .sticky .sticky__btn {
-    font-size: 90%;
-  }
-}
 @media (max-width: 500px) {
   .sticky .sticky__btn {
-    font-size: 80%;
-  }
-}
-@media (max-width: 768px) {
-  .sticky .sticky__btn {
-    min-width: 160px;
-    min-height: 10px;
-    margin: 1%;
-  }
-}
-@media (max-width: 500px) {
-  .sticky .sticky__btn {
-    min-width: 130px;
-    min-height: 10px;
-    margin: 1%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    color: #ffffff;
+    font-weight: 400;
+    min-width: 180px;
   }
 }
 .sticky .sticky__btn:hover {
@@ -152,40 +137,6 @@ h2 {
   font-weight: 700;
   cursor: pointer;
   background-color: #a58076;
-}
-@media (max-width: 768px) {
-  .sticky .sticky__btn:hover {
-    min-width: 160px;
-    min-height: 10px;
-    margin: 1%;
-  }
-}
-@media (max-width: 500px) {
-  .sticky .sticky__btn:hover {
-    min-width: 130px;
-    min-height: 10px;
-    margin: 1%;
-  }
-}
-@media (max-width: 768px) {
-  .sticky .sticky__btn:hover {
-    font-size: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .sticky .sticky__btn:hover {
-    font-size: 80%;
-  }
-}
-@media (max-width: 768px) {
-  .sticky img {
-    width: 20%;
-  }
-}
-@media (max-width: 500px) {
-  .sticky img {
-    width: 23%;
-  }
 }
 
 .header {
@@ -274,31 +225,92 @@ footer .rights {
   color: #ffffff;
   font-size: 80%;
 }
-@media (max-width: 768px) {
-  footer .rights {
-    font-size: 60%;
-  }
-}
 @media (max-width: 500px) {
   footer .rights {
-    font-size: 50%;
+    font-size: 60%;
   }
 }
 
 .container {
   display: grid;
-  grid-template: 6% 1fr 5%/100%;
+  grid-template: 12% 1fr 10.5%/100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template: 15% 1fr 10.5%/100%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    grid-template: 15% 1fr 10.5%/100%;
+  }
 }
 
 .header {
-  grid-template: 60% 40%/100%;
+  grid-template: 70% 30%/100%;
+}
+@media (max-width: 768px) {
+  .header {
+    grid-template: 75% 25%/100%;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    grid-template: 60% 40%/100%;
+  }
 }
 .header .header__contacts {
-  grid-template-columns: 100%/1fr 1.5fr 1fr;
+  grid-template-columns: 100%/1fr 1fr 1fr;
+  gap: 1%;
+}
+@media (max-width: 768px) {
+  .header .header__contacts {
+    grid-template: 100%/2fr 1fr 2fr;
+    font-family: "Open Sans", sans-serif;
+    font-size: 80%;
+    color: #5f454e;
+    font-weight: 700;
+  }
+}
+@media (max-width: 500px) {
+  .header .header__contacts {
+    font-family: "Open Sans", sans-serif;
+    font-size: 50%;
+    color: #5f454e;
+    font-weight: 700;
+  }
+}
+.header .header__nav {
+  padding: 5%;
+  width: 100%;
+}
+.header .header__logo {
+  width: 80%;
+}
+.header .logo__img {
+  max-width: 100%;
+}
+.header .logo__link {
+  display: flex;
+  justify-content: center;
 }
 
 .contacts {
   padding: 1% 5%;
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+}
+@media (max-width: 768px) {
+  .contacts {
+    grid-template-rows: 1fr 45%;
+  }
+}
+@media (max-width: 500px) {
+  .contacts {
+    grid-template-rows: 35% 1fr;
+    padding-top: 1%;
+  }
 }
 .contacts .contacts__map-wrapper {
   display: flex;
@@ -315,7 +327,31 @@ footer .rights {
   border-radius: 15px;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footer .information__logo-wrapper {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .footer .information__logo-wrapper {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .footer .information__logo-wrapper {
+    display: none;
+  }
+}
+.footer .information__logo {
+  width: 100%;
+  padding-bottom: 5%;
+}
 .footer .information {
+  width: 100%;
   display: grid;
   grid-template-columns: 6fr 1fr 6fr;
 }
@@ -324,8 +360,8 @@ footer .rights {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 5%;
   padding-bottom: 5%;
-  background: linear-gradient(#f5ebe3, #ffffff);
 }
 .footer .rights {
   display: flex;
@@ -333,6 +369,5 @@ footer .rights {
   justify-content: center;
   align-items: center;
   padding: 1.5% 0;
-  background-color: #a58076;
-  color: #ffffff;
+  width: 100%;
 }/*# sourceMappingURL=contacts.css.map */
