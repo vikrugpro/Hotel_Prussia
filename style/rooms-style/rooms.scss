@@ -1,8 +1,5 @@
 @import "../vars";
 @import "../template";
-* {
-    border: solid 1px;
-}
 .container {
     display: grid;
     grid-template: 7% 1fr 8%/ 100%;
@@ -33,6 +30,10 @@
             @include font($font, 50%, $colorplum, 700);
         }
     }
+    .header__nav {
+        padding: 0;
+        width: 100%;
+    }
     .header__logo {
         width: 80%;
     }
@@ -55,9 +56,6 @@
         @include font($font, 200%, $colorplum, 700);
         padding: 0;
         @include _tablet {
-            font-size: 150%;
-        }
-        @include _tablet {
             font-size: 100%;
         }
     }
@@ -77,9 +75,6 @@
     .rooms__text {
         padding: 1%;
         @include font($font, 160%, $colorplum, 400);
-        @include _tablet {
-            font-size: 130%;
-        }
         @include _tablet {
             font-size: 80%;
         }

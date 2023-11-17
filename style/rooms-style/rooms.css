@@ -285,10 +285,6 @@ footer .rights {
   }
 }
 
-* {
-  border: solid 1px;
-}
-
 .container {
   display: grid;
   grid-template: 7% 1fr 8%/100%;
@@ -339,6 +335,10 @@ footer .rights {
     font-weight: 700;
   }
 }
+.header .header__nav {
+  padding: 0;
+  width: 100%;
+}
 .header .header__logo {
   width: 80%;
 }
@@ -371,11 +371,6 @@ footer .rights {
 }
 @media (max-width: 768px) {
   .rooms .smalltitle {
-    font-size: 150%;
-  }
-}
-@media (max-width: 768px) {
-  .rooms .smalltitle {
     font-size: 100%;
   }
 }
@@ -402,11 +397,6 @@ footer .rights {
   font-size: 160%;
   color: #5f454e;
   font-weight: 400;
-}
-@media (max-width: 768px) {
-  .rooms .rooms__text {
-    font-size: 130%;
-  }
 }
 @media (max-width: 768px) {
   .rooms .rooms__text {

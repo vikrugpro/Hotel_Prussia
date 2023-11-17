@@ -287,32 +287,69 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 15% 1fr 10.5%/100%;
-  min-height: 500px;
+  grid-template: 12% 1fr 10.5%/100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template: 15% 1fr 10.5%/100%;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    grid-template: 15% 1fr 10.5%/100%;
+  }
+}
+
+.sticky {
+  bottom: 13%;
 }
 
 .header {
-  grid-template: 60% 40%/100%;
-  padding-top: 1.5%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: #5f454e;
-  font-weight: 600;
+  grid-template: 70% 30%/100%;
+}
+@media (max-width: 768px) {
+  .header {
+    grid-template: 75% 25%/100%;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    grid-template: 60% 40%/100%;
+  }
 }
 .header .header__contacts {
-  grid-template-columns: 100%/1fr 1.5fr 1fr;
-  font-size: 1.1rem;
+  grid-template-columns: 100%/1fr 1fr 1fr;
+  gap: 1%;
+}
+@media (max-width: 768px) {
+  .header .header__contacts {
+    grid-template: 100%/2fr 1fr 2fr;
+    font-family: "Open Sans", sans-serif;
+    font-size: 80%;
+    color: #5f454e;
+    font-weight: 700;
+  }
 }
 @media (max-width: 500px) {
   .header .header__contacts {
-    font-size: 0.7rem;
+    font-family: "Open Sans", sans-serif;
+    font-size: 50%;
+    color: #5f454e;
+    font-weight: 700;
   }
 }
 .header .header__nav {
-  font-size: 1.3rem;
+  padding: 0;
+  width: 100%;
 }
-
-.logo__link {
+.header .header__logo {
+  width: 80%;
+}
+.header .logo__img {
+  max-width: 100%;
+}
+.header .logo__link {
   display: flex;
   justify-content: center;
 }
@@ -322,30 +359,103 @@ footer .rights {
   display: grid;
   grid-template-rows: 1fr 0.5fr;
 }
+@media (max-width: 768px) {
+  .main {
+    grid-template-rows: 1fr 45%;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    grid-template-rows: 35% 1fr;
+    padding-top: 1%;
+  }
+}
 .main .pictures {
+  display: flex;
+  justify-content: center;
   grid-area: 1/1/2/2;
 }
 .main .pictures .pictures__carousel {
-  max-width: 100%;
+  max-width: 95%;
 }
-.main .about__text-wrapper {
+@media (max-width: 768px) {
+  .main .pictures .pictures__carousel {
+    max-width: 100%;
+  }
+}
+
+.about {
+  grid-area: 2/1/3/2;
+  padding: 1% 9%;
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 1% 4%;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    font-size: 100%;
+  }
+}
+.about .smalltitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 125%;
+  font-size: 200%;
   color: #5f454e;
-  font-weight: 500;
+  font-weight: 700;
+  padding: 2%;
 }
-.main p {
-  text-align: center;
+@media (max-width: 768px) {
+  .about .smalltitle {
+    font-size: 100%;
+  }
 }
-.main .about {
-  padding-bottom: 1%;
+.about .about__text {
+  padding: 0;
+  text-align: justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 160%;
+  color: #5f454e;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .about .about__text {
+    font-size: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .about .about__text {
+    font-size: 70%;
+  }
 }
 
 .footer {
-  grid-area: 3/1/4/2;
-  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footer .information__logo-wrapper {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .footer .information__logo-wrapper {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .footer .information__logo-wrapper {
+    display: none;
+  }
+}
+.footer .information__logo {
+  width: 100%;
+  padding-bottom: 5%;
 }
 .footer .information {
+  width: 100%;
   display: grid;
   grid-template-columns: 6fr 1fr 6fr;
 }
@@ -354,10 +464,8 @@ footer .rights {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 5%;
   padding-bottom: 5%;
-}
-.footer .information .information__logo-wrapper {
-  margin-bottom: 10%;
 }
 .footer .rights {
   display: flex;
@@ -365,7 +473,5 @@ footer .rights {
   justify-content: center;
   align-items: center;
   padding: 1.5% 0;
-  background-color: #5f454e;
-  color: #ffffff;
-  font-size: 125%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
