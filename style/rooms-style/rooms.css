@@ -212,22 +212,99 @@ footer {
   background: linear-gradient(#ffffff, #f5ebe3);
 }
 
+* {
+  border: solid 1px;
+}
+
 .container {
   display: grid;
-  grid-template: 10% 1fr 5%/100%;
+  grid-template: 6% 1fr 0.1fr/100%;
+  min-height: 200vh;
 }
 
 .header {
-  grid-template: 60% 40%/100%;
+  grid-template: 70% 30%/100%;
 }
 .header .header__contacts {
-  grid-template-columns: 100%/1fr 1.5fr 1fr;
+  grid-template-columns: 100%/1fr 1fr 1fr;
+  gap: 1%;
+}
+.header .header__logo {
+  width: 80%;
+}
+.header .logo__img {
+  max-width: 100%;
 }
 
-.rooms__container {
+.rooms {
   display: grid;
-  grid-template: 1fr 1fr/1fr 1fr 1fr;
-  gap: 5%;
+  grid-template-rows: 2% 6% 1fr 20%;
+  padding: 2% 3%;
+}
+.rooms .smalltitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 200%;
+  color: #5f454e;
+  font-weight: 700;
+  padding: 0;
+}
+.rooms .text_1 {
+  padding: 1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.rooms .rooms__text {
+  padding: 1%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 160%;
+  color: #5f454e;
+  font-weight: 400;
+}
+.rooms .rooms__container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr;
+  gap: 2%;
+}
+@media (max-width: 500px) {
+  .rooms .rooms__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.rooms .rooms__subtitle {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 160%;
+  color: #5f454e;
+  font-weight: 700;
+}
+.rooms .carousel-item img {
+  max-height: 100%;
+}
+.rooms .rooms__attention {
+  padding-top: 7%;
+  padding-bottom: 1%;
+  overflow-y: auto;
+}
+.rooms button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 130%;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #5f454e;
+  border-radius: 10px;
+  min-width: 250px;
+  min-height: 50px;
+  width: 30%;
+  margin: 1%;
+}
+.rooms .rooms__item,
+.rooms .rooms__price {
+  font-family: "Open Sans", sans-serif;
+  font-size: 130%;
+  color: #5f454e;
+  font-weight: 400;
 }
 
 .footer .information {
@@ -240,7 +317,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 5%;
-  background: linear-gradient(#f5ebe3, #ffffff);
 }
 .footer .rights {
   display: flex;
@@ -248,6 +324,5 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 1.5% 0;
-  background-color: #a58076;
-  color: #ffffff;
+  background-color: #5f454e;
 }/*# sourceMappingURL=rooms.css.map */
