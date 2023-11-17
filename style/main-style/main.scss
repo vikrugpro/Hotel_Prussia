@@ -4,7 +4,7 @@
     display: grid;
     grid-template: 15% 1fr 10.5% / 100%;
     min-height: 500px;
-    background-color: $colorbeige;
+    // background-color: $colorbeige;
 }
 .header {
     grid-template: 60% 40%/ 100%;
@@ -56,7 +56,7 @@
             display: flex;
             @include flex(row, space-around, center);
             padding-bottom: 5%;
-            background: linear-gradient($colorbeige, $colorwhite);
+            // background: linear-gradient($colorbeige, $colorwhite);
         }
         .information__logo-wrapper {
             margin-bottom: 10%;
@@ -66,7 +66,7 @@
         display: flex;
         @include flex(row, center, center);
         padding: 1.5% 0;
-        background-color: $colorbrown;
+        background-color: $colorplum;
         color: $colorwhite;
         font-size: 125%;
     }

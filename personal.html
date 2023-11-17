@@ -1,175 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Отель Пруссия</title>
-  <link rel="stylesheet" href="./style/normalize.css">
-  <link rel="stylesheet" href="./style/personal-style/personal.css">
-</head>
-
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="header__contacts txt">
-        <div class="header__phones">
-          <div class="header__phone">
-            <a href="tel:+79118579621">+7 (911) 85-79-621</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img-common/logo.ico"
+      type="image/x-icon"
+    />
+    <title>Отель Пруссия</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/main-style/main.css" />
+  </head>
+  <body>
+    <div class="sticky">
+      <a class="sticky__telegramchat" href="https://t.me/+79118579621"
+        ><img
+          class="button__img"
+          src="./assets/img-common/telegram.svg"
+          alt="Telegram"
+      /></a>
+      <button
+        class="sticky__btn btn"
+        onclick="window.location.href='#bookform'"
+      >
+        Забронировать
+      </button>
+    </div>
+    <!-- Основная страница -->
+    <div class="container">
+      <header class="header">
+        <div class="header__contacts txt">
+          <div class="header__phones">
+            <div class="header__phone">
+              <a href="tel:+79118579621">+7 911-85-79-621</a>
+            </div>
+            <div class="header__phone">
+              <a href="tel:+74012650057"> +7(4012) 65-00-57 </a>
+            </div>
           </div>
-          <div class="header__phone">
-            <a href="tel:+74012650057"> +7 (4012) 65-00-57 </a>
+          <div class="header__logo logo">
+            <a class="logo__link" href="./main.html">
+              <img
+                class="logo__img"
+                src="./assets/img-common/logo.png"
+                alt="Prussiya-logo"
+              />
+              <img
+                class="logo__img-short"
+                src="./assets/img-common/logo.ico"
+                alt="Short-logo"
+              />
+            </a>
           </div>
-        </div>
-        <div class="header__logo logo">
-          <a class="logo__link" href="./index.html">
-            <img class="logo__img" src="./assets/img-common/logo.png" alt="Prussiya-logo" />
-            <img class="logo__img-short" src="./assets/img-common/logo.ico" alt="Short-logo" />
-          </a>
-        </div>
-        <div class="header__address">
-          <a href="#contacts">236005, г. Калининград,<br />
-            ул. Коммунистическая, 4А</a>
-        </div>
-      </div>
-      <!-- Основная страница -->
-      <div class="main">
-        <div class="text">
-          <div class="text__header">
-            Согласие на обработку персональных данных Гостиница «Пруссия»
-          </div>
-          <div class="text__subtext">
-            Пользователь, оставляя заявку, сообщение или иную информацию на интернет-сайте <a
-              href="">hotel.prussia.me</a>, принимает настоящее Согласие на обработку персональных данных (далее –
-            Согласие). Действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность,
-            Пользователь дает свое согласие <b>ООО "Отель Пруссия"</b>, ИНН 3906286957, который расположен по адресу:
-            <b>236005 г. Калининград, ул. Коммунистическая, 4а,</b> на обработку своих персональных данных со следующими
-            условиями:
-          </div>
-          <div class="text__list">
-            <ol>
-              <li>Данное Согласие дается на обработку персональных данных, как без использования средств автоматизации,
-                так и с их использованием.</li>
-              <li>Согласие дается на обработку следующих моих персональных данных:
-                <ol class="list">
-                  <li>фамилия имя отчество;</li>
-                  <li>контактный адрес;</li>
-                  <li>номера контактных телефонов;</li>
-                  <li>адреса электронной почты;</li>
-                  <li>адреса мессенджеров;</li>
-                  <li>место работы и занимаемая должность;</li>
-                  <li>пользовательские данные (сведения о местоположении; тип и версия ОС; тип и
-                    версия браузера);</li>
-                  <li>тип устройства и разрешение его экрана; источник откуда пришел на сайт
-                    пользователь;</li>
-                  <li>с какого сайта или по какой рекламе; язык ОС и Браузера; какие страницы
-                    открывает и на какие кнопки нажимает пользователь; ip-адрес</li>
-                </ol>
-              </li>
-              <li>Персональные данные не являются общедоступными.</li>
-              <li>Цель обработки персональных данных:
-                <ol class="list">
-                  <li>прием и обработка заказов на товары и услуги физических лиц;</li>
-                  <li>обработка входящих запросов физических лиц с целью оказания
-                    консультирования;</li>
-                  <li>аналитики действий физического лица на веб-сайте и функционирования веб-сайта;</li>
-                  <li>проведение рекламных и новостных рассылок.</li>
-                </ol>
-              </li>
-              <li>Основанием для обработки персональных данных является:
-                <ol class="list">
-                  <li>ст. 24 Конституции Российской Федерации;</li>
-                  <li>ст.6 Федерального закона No152-ФЗ «О персональных данных»;</li>
-                  <li>настоящее согласие на обработку персональных данных.</li>
-                </ol>
-              </li>
-              <li>В ходе обработки с персональными данными будут совершены следующие действия:
-                <ol class="list">
-                  <li>сбор;</li>
-                  <li>запись;</li>
-                  <li>систематизация; накопление;</li>
-                  <li>хранение;</li>
-                  <li>уточнение (обновление, изменение);</li>
-                  <li>извлечение;</li>
-                  <li>использование;</li>
-                  <li>передача (распространение, предоставление, доступ);</li>
-                  <li>блокирование;</li>
-                  <li>удаление;</li>
-                  <li>уничтожение.</li>
-                </ol>
-              </li>
-              <li>Персональные данные обрабатываются до отписки физического лица от рекламных и новостных рассылок и до
-                момента исполнения заказа физического лица произведенного на сайте <a href="">hotel.prussia.me</a>.
-                Также
-                обработка персональных данных может быть прекращена по запросу субъекта персональных данных. Хранение
-                персональных данных, зафиксированных на бумажных носителях осуществляется согласно Федеральному закону
-                No125-ФЗ «Об архивном деле в Российской Федерации» и иным нормативно правовым актам в области
-                архивного
-                дела и архивного хранения.</li>
-              <li>Согласие может быть отозвано субъектом персональных данных или его представителем путем направления
-                письменного заявления ИП Лиходиевская Яна Владимировна или его представителю по адресу, указанному в
-                начале данного Согласия.</li>
-              <li>В случае отзыва субъектом персональных данных или его представителем согласия на обработку
-                персональных
-                данных <b>ООО "Отель Пруссия"</b> вправе продолжить обработку персональных данных без согласия субъекта
-                персональных данных при наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6, части 2 статьи
-                10
-                и части 2 статьи 11 Федерального закона No152-ФЗ «О персональных данных» от 27.07.2006 г.</li>
-              <li>Настоящее согласие действует все время до момента прекращения обработки персональных данных,
-                указанных
-                в п.7 и п.8 данного Согласия или ликвидации ИП. </li>
-            </ol>
-          </div>
-          <div class="text__subtext">Регистрационный номер на портале Федеральной службы по надзору в сфере связи,
-            информационных технологий и массовых коммуникаций (Роскомнадзор):<br>
-            Если у вас возникнут вопросы в отношении политики конфиденциальности или обработки персональных данных
-            гостиницей, Вы можете связаться с нами используя данные, указанные на странице:<a
-              href="">hotel.prussia.me</a>.
+          <div class="header__address">
+            <a href="#contacts"
+              >236005, г. Калининград,<br />
+              ул. Коммунистическая, 4А</a
+            >
           </div>
         </div>
-      </div>
+        <nav class="header__nav nav txt">
+          <a class="nav__link" href="./main.html">О нас</a>
+          <a class="nav__link" href="./rooms.html">Наши номера</a>
+          <a class="nav__link" href="./reviews.html">Отзывы</a>
+          <a class="nav__link" href="./book.html">Забронировать</a>
+          <a class="nav__link" href="./contacts.html">Контакты</a>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="pictures">
+          <div class="pictures__carousel">
+            <div
+              id="carousel1"
+              class="pictures__img-wrapper carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/img-carousel1/1.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img-carousel1/2.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img-carousel1/3.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img-carousel1/4.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img-carousel1/5.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img-carousel1/6.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/img-carousel1/7.jpg"
+                    class="d-block w-100"
+                    alt="hotel-photo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <h2 class="about__smalltitle smalltitle">Отель «Пруссия»</h2>
+          <div class="about__text-wrapper">
+            <p class="about__text">
+              Наш отель находится в парковой зеленой зоне тихого исторического
+              района города (бывш. немец. Ponart).
+            </p>
+            <p class="about__text">
+              В 3 минутах ходьбы располагается детская площадка, развлекательный
+              семейный досуговый центр, магазины, аптеки. <br />В 5 минутах
+              ходьбы находится рекреационная зона &ndash; озеро Летнее,
+              обустроенное детской площадкой, тренажерами, пешеходными и
+              беговыми дорожками. В 10 минутах ходьбы есть спортивный комплекс с
+              бассейном.
+            </p>
+            <p class="about__text">
+              От отеля до железнодорожного вокзала и автовокзала 3 остановки на
+              автобусе или маршрутном такси.
+            </p>
+            <p class="about__text">
+              В отделке интерьера и мебели отеля используются только природные
+              материалы: дерево, камень, натуральные ткани. Экологичность
+              &ndash; наше главное преимущество.
+            </p>
+            <p class="about_text">
+              Отель имеет свою бесплатную парковку для гостей.
+            </p>
+          </div>
+        </section>
+      </main>
       <footer class="footer">
-        <div class="contacts" id="contacts">
-          <div class="contacts__map-wrapper">
-            <iframe class="contacts__map"
-              src="https://yandex.ru/map-widget/v1/?scroll=false&amp;um=constructor%3Ad_pIYmqb3Er9m54YBvpE7xtIJQUXSzN_"></iframe>
-          </div>
-          <div class="contacts__info">
-            <div class="contacts__text">
-              <b>Отель "ПРУССИЯ"</b> категория "без звезд" (свидетельство №
-              78/17/0251-2019)
-            </div>
-            <div class="contacts__text">
-              <b>Фактический адрес:</b> 236005, Россия, г. Калининград, ул.
-              Коммунистическая 4а.
-            </div>
-            <div class="contacts__text">
-              <b>ИНН:</b>391800946429 <b>ОГРНИП:</b>318392600035900
-            </div>
-            <div class="contacts__text">
-              <b>e-mail:</b> prussia.hotel@gmail.com
-            </div>
-            <div class="contacts__text">
-              <b>телефон:</b> +7(4012) 65-00-57, +7 911-85-79-621
-            </div>
-          </div>
-        </div>
         <div class="information txt__bottom" id="information">
           <div class="information-block block-1">
-            <a href="./personal.html" class="information__link">О защите персональных данных</a>
+            <a href="./personal.html" class="information__link"
+              >О защите персональных данных</a
+            >
           </div>
           <div class="information-block block-2">
             <div class="information__logo-wrapper">
-              <img class="information__logo" src="./assets/img-common/logo_1.png" alt="Логотип отеля" />
+              <img
+                class="information__logo"
+                src="./assets/img-common/logo_1.png"
+                alt="Логотип отеля"
+              />
             </div>
           </div>
           <div class="information-block block-3">
-            <a href="./rules.html" class="information__link">Внутренние правила гостиницы</a>
+            <a href="./rules.html" class="information__link"
+              >Внутренние правила гостиницы</a
+            >
           </div>
         </div>
         <div class="rights">&#xa9; Отель &laquo;Пруссия&raquo; 2023</div>
       </footer>
-  </div>
-</body>
-
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

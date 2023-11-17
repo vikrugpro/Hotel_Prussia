@@ -10,7 +10,6 @@
   margin: 0 auto;
   padding: 0;
   max-width: 1640px;
-  background-color: #f5ebe3;
   color: #5f454e;
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
@@ -21,9 +20,6 @@
 section {
   border: none;
   padding: 0 7%;
-}
-section:nth-child(odd) {
-  background-color: #f5ebe3;
 }
 
 a {
@@ -142,7 +138,7 @@ h2 {
   font-size: 100%;
   color: #5f454e;
   font-weight: 600;
-  background: linear-gradient(#ffffff, #f5ebe3);
+  background: linear-gradient(#f5ebe3, #ffffff);
   padding: 0 5%;
 }
 .header .header__contacts {
@@ -209,27 +205,20 @@ h2 {
   }
 }
 
-.header {
-  padding-top: 1.5%;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  color: #5f454e;
-  font-weight: 600;
+main {
+  background-color: #ffffff;
 }
-.header .header__contacts {
-  grid-template-columns: 100%/1fr 1.5fr 1fr;
-  font-size: 1.1rem;
-}
-@media (max-width: 500px) {
-  .header .header__contacts {
-    font-size: 0.7rem;
-  }
-}
-.header main {
-  padding: 2% 5% 1% 3%;
+
+footer {
   background: linear-gradient(#ffffff, #f5ebe3);
 }
-.header .containerR {
+
+main {
+  padding: 0% 5% 1% 3%;
+  background: linear-gradient(#ffffff, #f5ebe3);
+}
+
+.containerR {
   display: grid;
   grid-template-rows: repeat(3 auto);
 }
