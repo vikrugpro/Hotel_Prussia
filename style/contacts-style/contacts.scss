@@ -2,16 +2,60 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 6% 1fr 5% / 100%;
+    grid-template: 12% 1fr 10.5% / 100%;
+    @include _tablet {
+        grid-template: 15% 1fr 10.5% / 100%;
+    }
+    @include _mobile {
+        grid-template: 15% 1fr 10.5% / 100%;
+    }
+    min-height: 100vh;
 }
 .header {
-    grid-template: 60% 40%/ 100%;
+    grid-template: 70% 30%/ 100%;
+    @include _tablet {
+        grid-template: 75% 25%/ 100%;
+    }
+    @include _mobile {
+        grid-template: 60% 40%/ 100%;
+    }
     .header__contacts {
-        grid-template-columns: 100% / 1fr 1.5fr 1fr;
+        grid-template-columns: 100% / 1fr 1fr 1fr;
+        gap: 1%;
+        @include _tablet {
+            grid-template: 100% / 2fr 1fr 2fr;
+            @include font($font, 80%, $colorplum, 700);
+        }
+        @include _mobile {
+            @include font($font, 50%, $colorplum, 700);
+        }
+    }
+    .header__nav {
+        padding: 5%;
+        width: 100%;
+    }
+    .header__logo {
+        width: 80%;
+    }
+    .logo__img {
+        max-width: 100%;
+    }
+    .logo__link {
+        display: flex;
+        justify-content: center;
     }
 }
 .contacts {
     padding: 1% 5%;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    @include _tablet {
+        grid-template-rows: 1fr 45%;
+    }
+    @include _mobile {
+        grid-template-rows: 35% 1fr;
+        padding-top: 1%;
+    }
     .contacts__map-wrapper {
         display: flex;
         @include flex(row, center, center);
@@ -26,21 +70,36 @@
     }
 }
 .footer {
+    display: flex;
+    @include flex(column, flex-end, flex-end);
+    .information__logo-wrapper {
+        width: 70%;
+        @include _tablet {
+            width: 60%;
+        }
+        @include _mobile {
+            display: none;
+        }
+    }
+    .information__logo {
+        width: 100%;
+        padding-bottom: 5%;
+    }
     .information {
+        width: 100%;
         display: grid;
         grid-template-columns: 6fr 1fr 6fr;
         .information-block {
             display: flex;
             @include flex(row, space-around, center);
+            padding: 0 5%;
             padding-bottom: 5%;
-            background: linear-gradient($colorbeige, $colorwhite);
         }
     }
     .rights {
         display: flex;
         @include flex(row, center, center);
         padding: 1.5% 0;
-        background-color: $colorbrown;
-        color: $colorwhite;
+        width: 100%;
     }
 }
