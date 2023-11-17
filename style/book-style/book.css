@@ -121,6 +121,15 @@ h2 {
   min-height: 50px;
   width: 30%;
 }
+@media (max-width: 500px) {
+  .sticky .sticky__btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    color: #ffffff;
+    font-weight: 400;
+    min-width: 180px;
+  }
+}
 .sticky .sticky__btn:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 130%;
@@ -224,7 +233,7 @@ footer {
 }
 @media (max-width: 500px) {
   .container {
-    grid-template: 7% 1fr 8%/100%;
+    grid-template: 10% 1fr 8%/100%;
   }
 }
 
@@ -478,9 +487,19 @@ footer {
   padding: 0 2%;
   padding-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .footer .information .information-block {
+    padding-bottom: 15%;
+  }
+}
 .footer .information .information__logo {
   width: 100%;
   padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .footer .information .information__logo {
+    display: none;
+  }
 }
 .footer .rights {
   display: flex;

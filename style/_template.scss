@@ -81,6 +81,10 @@ h2 {
         min-width: 250px;
         min-height: 50px;
         width: 30%;
+        @include _mobile {
+            @include font($font, 100%, $colorwhite, 400);
+            min-width: 180px;
+        }
     }
     .sticky__btn:hover {
         @include font($font, 130%, $colorwhite, 700);
