@@ -30,9 +30,6 @@
             @include font($font, 65%, $colorplum, 700);
         }
     }
-    .header__phone {
-        font-size: 80%;
-    }
     .logo__img {
         width: 100%;
     }
@@ -40,9 +37,6 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
-    }
-    .header__address {
-        font-size: 78%;
     }
     .txt {
         @include font($font, 120%, $colorplum, 700);
@@ -64,13 +58,13 @@
         grid-template-rows: repeat(2, 1fr);
         gap: 2%;
         @include _tablet {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
         }
         @include _mobile {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        } 
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
         .reviews__img {
             max-width: 100%;
         }
@@ -89,7 +83,7 @@
 
 .footer {
     display: flex;
-    @include flex(column,flex-end, flex-end);
+    @include flex(column, flex-end, flex-end);
     .information {
         display: grid;
         grid-template-columns: 6fr 1fr 6fr;

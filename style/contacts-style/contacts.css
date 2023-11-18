@@ -107,7 +107,7 @@ h2 {
 .sticky {
   position: fixed;
   right: 2%;
-  bottom: 2%;
+  bottom: 17%;
   z-index: 9999999;
 }
 .sticky .sticky__btn {
@@ -121,13 +121,28 @@ h2 {
   min-height: 50px;
   width: 30%;
 }
+@media (max-width: 768px) {
+  .sticky .sticky__btn {
+    font-size: 90%;
+  }
+}
 @media (max-width: 500px) {
   .sticky .sticky__btn {
-    font-family: "Open Sans", sans-serif;
-    font-size: 100%;
-    color: #ffffff;
-    font-weight: 400;
-    min-width: 180px;
+    font-size: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .sticky .sticky__btn {
+    min-width: 160px;
+    min-height: 10px;
+    margin: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky .sticky__btn {
+    min-width: 130px;
+    min-height: 10px;
+    margin: 1%;
   }
 }
 .sticky .sticky__btn:hover {
@@ -137,6 +152,40 @@ h2 {
   font-weight: 700;
   cursor: pointer;
   background-color: #a58076;
+}
+@media (max-width: 768px) {
+  .sticky .sticky__btn:hover {
+    min-width: 160px;
+    min-height: 10px;
+    margin: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky .sticky__btn:hover {
+    min-width: 130px;
+    min-height: 10px;
+    margin: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .sticky .sticky__btn:hover {
+    font-size: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky .sticky__btn:hover {
+    font-size: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .sticky img {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky img {
+    width: 23%;
+  }
 }
 
 .header {
@@ -233,7 +282,7 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 12% 1fr 10.5%/100%;
+  grid-template: 22% 1fr 10.5%/100%;
   min-height: 100vh;
 }
 @media (max-width: 768px) {
@@ -245,6 +294,10 @@ footer .rights {
   .container {
     grid-template: 15% 1fr 10.5%/100%;
   }
+}
+
+.sticky {
+  bottom: 20%;
 }
 
 .header {
@@ -282,7 +335,6 @@ footer .rights {
   }
 }
 .header .header__nav {
-  padding: 5%;
   width: 100%;
 }
 .header .header__logo {
@@ -297,22 +349,22 @@ footer .rights {
 }
 
 .contacts {
-  padding: 1% 5%;
   display: grid;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 60% 1fr;
 }
 @media (max-width: 768px) {
   .contacts {
-    grid-template-rows: 1fr 45%;
+    grid-template-rows: 1fr 30%;
   }
 }
 @media (max-width: 500px) {
   .contacts {
-    grid-template-rows: 35% 1fr;
+    grid-template-rows: 1fr 30%;
     padding-top: 1%;
   }
 }
 .contacts .contacts__map-wrapper {
+  min-width: 380px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -320,11 +372,28 @@ footer .rights {
   padding: 1% 0;
 }
 .contacts .contacts__map {
-  min-width: 280px;
-  min-height: 300px;
-  width: 100%;
+  width: 70%;
+  height: 100%;
   border: 1px solid #5f454e;
   border-radius: 15px;
+}
+.contacts .contacts__info {
+  padding-left: 15%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 140%;
+  color: #5f454e;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .contacts .contacts__info {
+    padding-top: 5%;
+    font-size: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .contacts .contacts__info {
+    padding-left: 8%;
+  }
 }
 
 .footer {
