@@ -93,9 +93,6 @@
         hyphens: auto;
         @include font($font, 160%, $colorplum, 400);
         @include _tablet {
-            font-size: 80%;
-        }
-        @include _tablet {
             font-size: 70%;
         }
     }

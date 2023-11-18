@@ -107,7 +107,7 @@ h2 {
 .sticky {
   position: fixed;
   right: 2%;
-  bottom: 2%;
+  bottom: 17%;
   z-index: 9999999;
 }
 .sticky .sticky__btn {
@@ -121,13 +121,28 @@ h2 {
   min-height: 50px;
   width: 30%;
 }
+@media (max-width: 768px) {
+  .sticky .sticky__btn {
+    font-size: 90%;
+  }
+}
 @media (max-width: 500px) {
   .sticky .sticky__btn {
-    font-family: "Open Sans", sans-serif;
-    font-size: 100%;
-    color: #ffffff;
-    font-weight: 400;
-    min-width: 180px;
+    font-size: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .sticky .sticky__btn {
+    min-width: 160px;
+    min-height: 10px;
+    margin: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky .sticky__btn {
+    min-width: 130px;
+    min-height: 10px;
+    margin: 1%;
   }
 }
 .sticky .sticky__btn:hover {
@@ -137,6 +152,40 @@ h2 {
   font-weight: 700;
   cursor: pointer;
   background-color: #a58076;
+}
+@media (max-width: 768px) {
+  .sticky .sticky__btn:hover {
+    min-width: 160px;
+    min-height: 10px;
+    margin: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky .sticky__btn:hover {
+    min-width: 130px;
+    min-height: 10px;
+    margin: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .sticky .sticky__btn:hover {
+    font-size: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky .sticky__btn:hover {
+    font-size: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .sticky img {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .sticky img {
+    width: 23%;
+  }
 }
 
 .header {
@@ -282,9 +331,6 @@ footer .rights {
     font-weight: 700;
   }
 }
-.header .header__phone {
-  font-size: 80%;
-}
 .header .logo__img {
   width: 100%;
 }
@@ -292,9 +338,6 @@ footer .rights {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-.header .header__address {
-  font-size: 78%;
 }
 .header .txt {
   font-family: "Open Sans", sans-serif;

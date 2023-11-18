@@ -2,7 +2,7 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 12% 1fr 10.5% / 100%;
+    grid-template: 22% 1fr 10.5% / 100%;
     @include _tablet {
         grid-template: 15% 1fr 10.5% / 100%;
     }
@@ -10,6 +10,9 @@
         grid-template: 15% 1fr 10.5% / 100%;
     }
     min-height: 100vh;
+}
+.sticky {
+    bottom: 20%;
 }
 .header {
     grid-template: 70% 30%/ 100%;
@@ -31,7 +34,6 @@
         }
     }
     .header__nav {
-        padding: 5%;
         width: 100%;
     }
     .header__logo {
@@ -46,27 +48,37 @@
     }
 }
 .contacts {
-    padding: 1% 5%;
     display: grid;
-    grid-template-rows: 1fr 0.5fr;
+    grid-template-rows: 60% 1fr;
     @include _tablet {
-        grid-template-rows: 1fr 45%;
+        grid-template-rows: 1fr 30%;
     }
     @include _mobile {
-        grid-template-rows: 35% 1fr;
+        grid-template-rows: 1fr 30%;
         padding-top: 1%;
     }
     .contacts__map-wrapper {
+        min-width: 380px;
         display: flex;
         @include flex(row, center, center);
         padding: 1% 0;
     }
     .contacts__map {
-        min-width: 280px;
-        min-height: 300px;
-        width: 100%;
+        width: 70%;
+        height: 100%;
         border: 1px solid $colorplum;
         border-radius: 15px;
+    }
+    .contacts__info {
+        padding-left: 15%;
+        @include font($font, 140%, $colorplum, 400);
+        @include _tablet {
+            padding-top: 5%;
+            font-size: 80%;
+        }
+        @include _mobile {
+            padding-left: 8%;
+        }
     }
 }
 .footer {
