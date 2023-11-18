@@ -12,10 +12,12 @@
     }
 }
 .header {
+
     grid-template: 65% 35%/ 100%;
     @include _mobile {
         grid-template: 50% 50%/ 100%;
     }
+
     .header__contacts {
         grid-template: 100% / 1fr 1.5fr 1fr;
         gap: 1%;
@@ -27,12 +29,14 @@
             @include font($font, 50%, $colorplum, 700);
         }
     }
+
     // .header__phone {
     //     font-size: 80%;
     // }
     // .header__address {
     //     font-size: 78%;
     // }
+
     .header__nav {
         border-bottom: 1px solid $colorbrown;
         @include _mobile {
@@ -99,6 +103,7 @@ ol {
 .footer {
     display: flex;
     @include flex(column, flex-end, flex-end);
+
     .information {
         display: grid;
         grid-template-columns: 6fr 1fr 6fr;
@@ -107,6 +112,7 @@ ol {
             display: flex;
             @include flex(row, space-around, center);
             padding: 0 2%;
+
             padding-bottom: 5%;
             @include _mobile {
                 padding-bottom: 15%;
@@ -116,6 +122,7 @@ ol {
             width: 100%;
             padding-bottom: 5%;
             @include _mobile {
+
                 display: none;
             }
         }
@@ -129,3 +136,4 @@ ol {
         color: $colorwhite;
     }
 }
+

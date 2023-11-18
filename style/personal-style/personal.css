@@ -303,6 +303,7 @@ footer .rights {
   .header {
     grid-template: 50% 50%/100%;
   }
+
 }
 .header .header__contacts {
   grid-template: 100%/1fr 1.5fr 1fr;
@@ -351,6 +352,7 @@ footer .rights {
 
 .text {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -379,6 +381,7 @@ footer .rights {
 }
 .text .main__subtitle {
   margin-top: 2%;
+
   font-family: "Open Sans", sans-serif;
   font-size: 120%;
   color: #5f454e;
@@ -394,6 +397,7 @@ footer .rights {
     font-size: 80%;
   }
 }
+
 .text .text__subtext {
   text-indent: 50px;
   text-align: justify;
@@ -448,6 +452,7 @@ ol {
   padding-bottom: 5%;
 }
 @media (max-width: 500px) {
+
   .footer .information .information__logo {
     display: none;
   }
