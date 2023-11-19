@@ -2,19 +2,25 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 18% 1fr 19% / 100%;
+    grid-template: 12% 1fr 14% / 100%;
     min-height: 100vh;
     @include _tablet {
-        grid-template: 15% 1fr 8% / 100%;
+        grid-template: 9% 1fr 8% / 100%;
     }
     @include _mobile {
-        grid-template: 18% 1fr 12% / 100%;
+        grid-template: 8% 1fr 5% / 100%;
     }
 }
 .header {
-    grid-template: 60% 40%/ 100%;
+    grid-template: 70% 30%/ 100%;
+    @include _tablet {
+        grid-template: 75% 25%/ 100%;
+    }
+    @include _mobile {
+        grid-template: 60% 40%/ 100%;
+    }
     .header__contacts {
-        grid-template: 100% / 1fr 1.5fr 1fr;
+        grid-template-columns: 100% / 1fr 1fr 1fr;
         gap: 1%;
         @include _tablet {
             grid-template: 100% / 2fr 1fr 2fr;
@@ -25,33 +31,24 @@
         }
     }
     .header__nav {
-        border-bottom: 1px solid $colorbrown;
-        @include _mobile {
-            @include font($font, 65%, $colorplum, 700);
-        }
+        padding: 0;
+        width: 100%;
+    }
+    .header__logo {
+        width: 80%;
     }
     .logo__img {
-        width: 100%;
+        max-width: 100%;
     }
-    .logo__img-short {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .txt {
-        @include font($font, 120%, $colorplum, 700);
-        @include _tablet {
-            font-size: 90%;
-        }
-        @include _mobile {
-            font-size: 70%;
-        }
+    .logo__link {
+        display: flex;
+        justify-content: center;
     }
 }
 .reviews {
     grid-template: 15% 1fr / 100%;
-    margin-top: 5%;
-    padding: 0 5%;
+    border: none;
+    padding: 5% 7%;
     .reviews__container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -114,12 +111,4 @@
         color: $colorwhite;
     }
 }
-.txt__bottom {
-    @include font($font, 120%, $colorplum, 700);
-    @include _tablet {
-        font-size: 90%;
-    }
-    @include _mobile {
-        font-size: 70%;
-    }
-}
+

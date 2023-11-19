@@ -282,25 +282,35 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 18% 1fr 19%/100%;
+  grid-template: 12% 1fr 14%/100%;
   min-height: 100vh;
 }
 @media (max-width: 768px) {
   .container {
-    grid-template: 15% 1fr 8%/100%;
+    grid-template: 9% 1fr 8%/100%;
   }
 }
 @media (max-width: 500px) {
   .container {
-    grid-template: 18% 1fr 12%/100%;
+    grid-template: 8% 1fr 5%/100%;
   }
 }
 
 .header {
-  grid-template: 60% 40%/100%;
+  grid-template: 70% 30%/100%;
+}
+@media (max-width: 768px) {
+  .header {
+    grid-template: 75% 25%/100%;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    grid-template: 60% 40%/100%;
+  }
 }
 .header .header__contacts {
-  grid-template: 100%/1fr 1.5fr 1fr;
+  grid-template-columns: 100%/1fr 1fr 1fr;
   gap: 1%;
 }
 @media (max-width: 768px) {
@@ -321,45 +331,24 @@ footer .rights {
   }
 }
 .header .header__nav {
-  border-bottom: 1px solid #a58076;
+  padding: 0;
+  width: 100%;
 }
-@media (max-width: 500px) {
-  .header .header__nav {
-    font-family: "Open Sans", sans-serif;
-    font-size: 65%;
-    color: #5f454e;
-    font-weight: 700;
-  }
+.header .header__logo {
+  width: 80%;
 }
 .header .logo__img {
-  width: 100%;
+  max-width: 100%;
 }
-.header .logo__img-short {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header .txt {
-  font-family: "Open Sans", sans-serif;
-  font-size: 120%;
-  color: #5f454e;
-  font-weight: 700;
-}
-@media (max-width: 768px) {
-  .header .txt {
-    font-size: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .header .txt {
-    font-size: 70%;
-  }
+.header .logo__link {
+  display: flex;
+  justify-content: center;
 }
 
 .reviews {
   grid-template: 15% 1fr/100%;
-  margin-top: 5%;
-  padding: 0 5%;
+  border: none;
+  padding: 5% 7%;
 }
 .reviews .reviews__container {
   display: grid;
@@ -442,21 +431,4 @@ footer .rights {
   width: 100%;
   background-color: #5f454e;
   color: #ffffff;
-}
-
-.txt__bottom {
-  font-family: "Open Sans", sans-serif;
-  font-size: 120%;
-  color: #5f454e;
-  font-weight: 700;
-}
-@media (max-width: 768px) {
-  .txt__bottom {
-    font-size: 90%;
-  }
-}
-@media (max-width: 500px) {
-  .txt__bottom {
-    font-size: 70%;
-  }
 }/*# sourceMappingURL=reviews.css.map */

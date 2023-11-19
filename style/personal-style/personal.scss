@@ -12,14 +12,15 @@
     }
 }
 .header {
-
-    grid-template: 65% 35%/ 100%;
-    @include _mobile {
-        grid-template: 50% 50%/ 100%;
+    grid-template: 70% 30%/ 100%;
+    @include _tablet {
+        grid-template: 75% 25%/ 100%;
     }
-
+    @include _mobile {
+        grid-template: 60% 40%/ 100%;
+    }
     .header__contacts {
-        grid-template: 100% / 1fr 1.5fr 1fr;
+        grid-template-columns: 100% / 1fr 1fr 1fr;
         gap: 1%;
         @include _tablet {
             grid-template: 100% / 2fr 1fr 2fr;
@@ -29,36 +30,25 @@
             @include font($font, 50%, $colorplum, 700);
         }
     }
-
-    // .header__phone {
-    //     font-size: 80%;
-    // }
-    // .header__address {
-    //     font-size: 78%;
-    // }
-
     .header__nav {
-        border-bottom: 1px solid $colorbrown;
-        @include _mobile {
-            @include font($font, 65%, $colorplum, 700);
-        }
+        padding: 0;
+        width: 100%;
+    }
+    .header__logo {
+        width: 80%;
     }
     .logo__img {
-        width: 100%;
+        max-width: 100%;
     }
-    .logo__img-short {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+    .logo__link {
+        display: flex;
+        justify-content: center;
     }
 }
-.main {
-    padding: 2% 5%;
-}
-
 .text {
     display: flex;
     @include flex(column, center, center);
+    padding: 2% 5%;
     @include font($font, 100%, $colorplum, 500);
     line-height: 2;
     @include font($font, 120%, $colorplum, 400);

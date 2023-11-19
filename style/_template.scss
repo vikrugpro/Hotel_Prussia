@@ -3,22 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // border: 1px solid;
 }
 .container {
     margin: 0 auto;
     padding: 0;
     max-width: 1640px;
-    // background-color: $colorbeige;
     color: $colorplum;
     @include font($font, 100%, $colorplum, 400);
 }
 section {
     border: none;
     padding: 0 7%;
-    // &:nth-child(odd) {
-    //     background-color: $colorbeige;
-    // }
 }
 a {
     text-decoration: none;
