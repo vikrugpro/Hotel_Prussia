@@ -275,7 +275,7 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 22% 1fr 25%/100%;
+  grid-template: 22% 1fr 22%/100%;
   min-height: 110vh;
 }
 @media (max-width: 768px) {
