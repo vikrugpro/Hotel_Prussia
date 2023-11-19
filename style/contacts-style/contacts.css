@@ -259,9 +259,6 @@ main {
   background-color: #ffffff;
 }
 
-footer {
-  background: linear-gradient(#ffffff, #f5ebe3);
-}
 footer .rights {
   background-color: #5f454e;
   color: #ffffff;
@@ -275,17 +272,19 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 22% 1fr 17%/100%;
-  min-height: 100vh;
+  grid-template: 22% 1fr 25%/100%;
+  min-height: 110vh;
 }
 @media (max-width: 768px) {
   .container {
     grid-template: 15% 1fr 15%/100%;
+    min-height: 100vh;
   }
 }
 @media (max-width: 500px) {
   .container {
     grid-template: 15% 1fr 10.5%/100%;
+    min-height: 100vh;
   }
 }
 

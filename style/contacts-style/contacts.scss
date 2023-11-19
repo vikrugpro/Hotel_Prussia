@@ -2,14 +2,16 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 22% 1fr 17% / 100%;
+    grid-template: 22% 1fr 25% / 100%;
+    min-height: 110vh;
     @include _tablet {
         grid-template: 15% 1fr 15% / 100%;
+        min-height: 100vh;
     }
     @include _mobile {
         grid-template: 15% 1fr 10.5% / 100%;
+        min-height: 100vh;
     }
-    min-height: 100vh;
 }
 .sticky {
     bottom: 20%;
