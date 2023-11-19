@@ -280,7 +280,7 @@ footer .rights {
 }
 @media (max-width: 768px) {
   .container {
-    grid-template: 15% 1fr 10.5%/100%;
+    grid-template: 15% 1fr 15%/100%;
   }
 }
 @media (max-width: 500px) {

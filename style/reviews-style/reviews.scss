@@ -2,10 +2,10 @@
 @import "../template";
 .container {
     display: grid;
-    grid-template: 16% 1fr 14% / 100%;
+    grid-template: 16% 1fr 16% / 100%;
     min-height: 100vh;
     @include _tablet {
-        grid-template: 9% 1fr 8% / 100%;
+        grid-template: 12% 1fr 16% / 100%;
     }
     @include _mobile {
         grid-template: 8% 1fr 5% / 100%;

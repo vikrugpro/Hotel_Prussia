@@ -4,7 +4,7 @@
     display: grid;
     grid-template: 22% 1fr 17% / 100%;
     @include _tablet {
-        grid-template: 15% 1fr 10.5% / 100%;
+        grid-template: 15% 1fr 15% / 100%;
     }
     @include _mobile {
         grid-template: 15% 1fr 10.5% / 100%;
