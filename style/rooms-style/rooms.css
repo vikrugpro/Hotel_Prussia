@@ -259,6 +259,9 @@ main {
   background-color: #ffffff;
 }
 
+footer {
+  background: linear-gradient(#ffffff, #f5ebe3);
+}
 footer .rights {
   background-color: #5f454e;
   color: #ffffff;
