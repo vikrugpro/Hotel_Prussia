@@ -92,9 +92,9 @@
     }
     .rooms__subtitle {
         text-align: center;
-        @include font($font, 160%, $colorplum, 700);
+        @include font($font, 150%, $colorplum, 700);
         @include _tablet {
-            font-size: 130%;
+            font-size: 120%;
         }
         @include _tablet {
             font-size: 80%;

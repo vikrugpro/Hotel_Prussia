@@ -55,13 +55,6 @@ button:hover {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 650%;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-h2 {
   padding: 2% 0;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -282,7 +275,7 @@ footer .rights {
 
 .container {
   display: grid;
-  grid-template: 12% 1fr 14%/100%;
+  grid-template: 16% 1fr 14%/100%;
   min-height: 100vh;
 }
 @media (max-width: 768px) {

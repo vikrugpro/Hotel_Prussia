@@ -108,11 +108,19 @@ ol {
                 padding-bottom: 15%;
             }
         }
+        .information__logo-wrapper {
+            width: 70%;
+            @include _tablet {
+                width: 60%;
+            }
+            @include _mobile {
+                display: none;
+            }
+        }
         .information__logo {
             width: 100%;
             padding-bottom: 5%;
             @include _mobile {
-
                 display: none;
             }
         }
@@ -126,4 +134,3 @@ ol {
         color: $colorwhite;
     }
 }
-
