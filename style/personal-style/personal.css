@@ -55,13 +55,6 @@ button:hover {
 }
 
 h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 650%;
-  color: #ffffff;
-  font-weight: 600;
-}
-
-h2 {
   padding: 2% 0;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -438,6 +431,19 @@ ol {
 @media (max-width: 500px) {
   .footer .information .information-block {
     padding-bottom: 15%;
+  }
+}
+.footer .information .information__logo-wrapper {
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .footer .information .information__logo-wrapper {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .footer .information .information__logo-wrapper {
+    display: none;
   }
 }
 .footer .information .information__logo {

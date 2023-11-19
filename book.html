@@ -68,153 +68,157 @@
         </nav>
       </header>
       <main class="book">
-          <h2 class="book__smalltitle smalltitle">Бронирование</h2>
-          <div class="book__form-wrapper">
-            <form class="book__form" id="form" method="post" action="sendmail.php">
-              <div class="book__container">
-                <div class="book__item">
-                  <label for="room" class="form-label book__label"
-                    >Выберите номер</label
-                  >
-                  <select
-                    class="form-select book__choose"
-                    aria-label="Default select example                      "
-                    id="room"
-                  >
-                    <option class="book__value" selected value="">
-                      Выберите номер
-                    </option>
-                    <option class="book__value" value="1">
-                      Двухместный номер I категории (Double)
-                    </option>
-                    <option class="book__value" value="2">
-                      Улучшенный двухместный номер I категории (Double)
-                    </option>
-                    <option class="book__value" value="3">
-                      Двухместный номер I категории (Twin)
-                    </option>
-                    <option class="book__value" value="4">
-                      Трехместный номер I категории (Triple)
-                    </option>
-                    <option class="book__value" value="5">
-                      Четырехместный номер I категории (семейный)
-                    </option>
-                  </select>
-                </div>
-                <div class="book__item">
-                  <label for="date1" class="form-label book__label"
-                    >Дата заезда</label
-                  >
-                  <input
-                    type="date"
-                    id="data1"
-                    class="form-control book__text _req"
-                    placeholder="Дата заезда"
-                  />
-                </div>
-                <div class="book__item">
-                  <label for="date2" class="form-label book__label"
-                    >Дата выезда</label
-                  >
-                  <input
-                    type="date"
-                    id="data2"
-                    class="form-control book__text _req"
-                    placeholder="Дата выезда"
-                  />
-                </div>
-                <div class="book__item">
-                  <label for="name" class="form-label book__label"
-                    >Фамилия и имя</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    class="form-control book__text _req"
-                  />
-                </div>
-                <div class="book__item">
-                  <label for="email" class="form-label book__label"
-                    >E-mail</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    class="form-control book__text _req _email"
-                  />
-                </div>
-                <div class="book__item">
-                  <label for="tel" class="form-label book__label _req"
-                    >Телефон</label
-                  >
-                  <input type="tel" id="tel" class="form-control book__text" />
-                </div>
-                <div class="book__item">
-                  <label for="adult" class="form-label book__label"
-                    >Взрослые</label
-                  >
-                  <select
-                    id="adult"
-                    class="form-select book__choose"
-                    aria-label="Default select example"
-                  >
-                    <option class="book__value" selected value="">
-                      Количество человек
-                    </option>
-                    <option class="book__value" value="0">0</option>
-                    <option class="book__value" value="1">1</option>
-                    <option class="book__value" value="2">2</option>
-                    <option class="book__value" value="3">3</option>
-                    <option class="book__value" value="4">4</option>
-                    <option class="book__value" value="5">5</option>
-                    <option class="book__value" value="6">6</option>
-                    <option class="book__value" value="7">7</option>
-                    <option class="book__value" value="8">8</option>
-                    <option class="book__value" value="9">9</option>
-                  </select>
-                </div>
-                <div class="book__item">
-                  <label for="child" class="form-label book__label">Дети</label>
-                  <select
-                    id="child"
-                    class="form-select book__choose"
-                    aria-label="Default select example"
-                  >
-                    <option class="book__value" selected value="">
-                      Количество человек
-                    </option>
-                    <option class="book__value" value="0">0</option>
-                    <option class="book__value" value="1">1</option>
-                    <option class="book__value" value="2">2</option>
-                    <option class="book__value" value="3">3</option>
-                    <option class="book__value" value="4">4</option>
-                    <option class="book__value" value="5">5</option>
-                    <option class="book__value" value="6">6</option>
-                    <option class="book__value" value="7">7</option>
-                    <option class="book__value" value="8">8</option>
-                    <option class="book__value" value="9">9</option>
-                  </select>
-                </div>
-                <div class="book__item">
-                  <label for="message" class="form-label book__label"
-                    >Ваши пожелания</label
-                  >
-                  <textarea
-                    type="message"
-                    class="form-control book__text"
-                    rows="1"
-                    id="message"
-                  ></textarea>
-                </div>
+        <h1 class="book__smalltitle smalltitle">Бронирование</h1>
+        <div class="book__form-wrapper">
+          <form
+            class="book__form"
+            id="form"
+            method="post"
+            action="sendmail.php"
+          >
+            <div class="book__container">
+              <div class="book__item">
+                <label for="room" class="form-label book__label"
+                  >Выберите номер</label
+                >
+                <select
+                  class="form-select book__choose"
+                  aria-label="Default select example                      "
+                  id="room"
+                >
+                  <option class="book__value" selected value="">
+                    Выберите номер
+                  </option>
+                  <option class="book__value" value="1">
+                    Двухместный номер I категории (Double)
+                  </option>
+                  <option class="book__value" value="2">
+                    Улучшенный двухместный номер I категории (Double)
+                  </option>
+                  <option class="book__value" value="3">
+                    Двухместный номер I категории (Twin)
+                  </option>
+                  <option class="book__value" value="4">
+                    Трехместный номер I категории (Triple)
+                  </option>
+                  <option class="book__value" value="5">
+                    Четырехместный номер I категории (семейный)
+                  </option>
+                </select>
               </div>
-              <div class="book__btn-wrapper">
-                <button class="book__btn" type="submit">Забронировать</button>
+              <div class="book__item">
+                <label for="date1" class="form-label book__label"
+                  >Дата заезда</label
+                >
+                <input
+                  type="date"
+                  id="data1"
+                  class="form-control book__text _req"
+                  placeholder="Дата заезда"
+                />
               </div>
-            </form>
-            <div class="book__rules">
-              <div class="book__article">
-                <h3 class="book__subtitle">
-                Бронирование осуществляется бесплатно без внесения предоплаты (негарантированное бронирование):
+              <div class="book__item">
+                <label for="date2" class="form-label book__label"
+                  >Дата выезда</label
+                >
+                <input
+                  type="date"
+                  id="data2"
+                  class="form-control book__text _req"
+                  placeholder="Дата выезда"
+                />
+              </div>
+              <div class="book__item">
+                <label for="name" class="form-label book__label"
+                  >Фамилия и имя</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control book__text _req"
+                />
+              </div>
+              <div class="book__item">
+                <label for="email" class="form-label book__label">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control book__text _req _email"
+                />
+              </div>
+              <div class="book__item">
+                <label for="tel" class="form-label book__label _req"
+                  >Телефон</label
+                >
+                <input type="tel" id="tel" class="form-control book__text" />
+              </div>
+              <div class="book__item">
+                <label for="adult" class="form-label book__label"
+                  >Взрослые</label
+                >
+                <select
+                  id="adult"
+                  class="form-select book__choose"
+                  aria-label="Default select example"
+                >
+                  <option class="book__value" selected value="">
+                    Количество человек
+                  </option>
+                  <option class="book__value" value="0">0</option>
+                  <option class="book__value" value="1">1</option>
+                  <option class="book__value" value="2">2</option>
+                  <option class="book__value" value="3">3</option>
+                  <option class="book__value" value="4">4</option>
+                  <option class="book__value" value="5">5</option>
+                  <option class="book__value" value="6">6</option>
+                  <option class="book__value" value="7">7</option>
+                  <option class="book__value" value="8">8</option>
+                  <option class="book__value" value="9">9</option>
+                </select>
+              </div>
+              <div class="book__item">
+                <label for="child" class="form-label book__label">Дети</label>
+                <select
+                  id="child"
+                  class="form-select book__choose"
+                  aria-label="Default select example"
+                >
+                  <option class="book__value" selected value="">
+                    Количество человек
+                  </option>
+                  <option class="book__value" value="0">0</option>
+                  <option class="book__value" value="1">1</option>
+                  <option class="book__value" value="2">2</option>
+                  <option class="book__value" value="3">3</option>
+                  <option class="book__value" value="4">4</option>
+                  <option class="book__value" value="5">5</option>
+                  <option class="book__value" value="6">6</option>
+                  <option class="book__value" value="7">7</option>
+                  <option class="book__value" value="8">8</option>
+                  <option class="book__value" value="9">9</option>
+                </select>
+              </div>
+              <div class="book__item">
+                <label for="message" class="form-label book__label"
+                  >Ваши пожелания</label
+                >
+                <textarea
+                  type="message"
+                  class="form-control book__text"
+                  rows="1"
+                  id="message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="book__btn-wrapper">
+              <button class="book__btn" type="submit">Забронировать</button>
+            </div>
+          </form>
+          <div class="book__rules">
+            <div class="book__article">
+              <h3 class="book__subtitle">
+                Бронирование осуществляется бесплатно без внесения предоплаты
+                (негарантированное бронирование):
               </h3>
               <ul class="book__list">
                 <li class="book__text">на сайте,</li>
@@ -224,26 +228,26 @@
                   обратившись к администратору отеля на рецепции.
                 </li>
               </ul>
-              </div>              
-              <div class="book__scale">
-                <h3 class="book__subtitle">Расчетный час</h3>
-                <div class="book__text">
-                  Заезд в 14:00, выезд в 12:00.
-                </div>
-                <h3 class="book__subtitle">Ранний заезд</h3>
-                <div class="book__text">
-                  Заезд в 12:00 до 14:00 предоставляется бесплатно (при наличии свободного номера).
-                </div>
-                <h3 class="book__subtitle">Поздний выезд</h3>
-                <div class="book__text">
-                  Выезд с 12:00 до 19:00 составляет 50% от стоимости номера.
-                </div>
-                <div class="book__text">
-                  Выезд с 12:00 до 14:00 предоставляется бесплатно (при наличии предварительном согласовании).
-                </div>
+            </div>
+            <div class="book__scale">
+              <h3 class="book__subtitle">Расчетный час</h3>
+              <div class="book__text">Заезд в 14:00, выезд в 12:00.</div>
+              <h3 class="book__subtitle">Ранний заезд</h3>
+              <div class="book__text">
+                Заезд в 12:00 до 14:00 предоставляется бесплатно (при наличии
+                свободного номера).
+              </div>
+              <h3 class="book__subtitle">Поздний выезд</h3>
+              <div class="book__text">
+                Выезд с 12:00 до 19:00 составляет 50% от стоимости номера.
+              </div>
+              <div class="book__text">
+                Выезд с 12:00 до 14:00 предоставляется бесплатно (при наличии
+                предварительном согласовании).
               </div>
             </div>
           </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="information txt__bottom" id="information">
