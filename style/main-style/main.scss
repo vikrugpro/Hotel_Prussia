@@ -60,6 +60,8 @@
         padding-top: 1%;
     }
     .pictures {
+        border: none;
+        padding: 0 7%;
         display: flex;
         justify-content: center;
         grid-area: 1/1/2/2;
